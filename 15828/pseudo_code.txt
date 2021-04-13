@@ -1,0 +1,13 @@
+- 버퍼의 크기를 나타내는 자연수 N 입력
+- while -1이 입력될 때까지 do:
+	- temp라는 변수에 정수를 입력받는다.
+	- if temp가 -1 then:
+		- while 큐가 비어있을 때까지 do:
+			- q.front() 출력
+			- q.pop()
+	- else if 큐가 가득 찼다면(q.size()가 N) then:
+		- temp에 입력된 값을 무시한다.
+	- else if temp가 0 then:
+		- q.pop()
+	- else temp가 양의 정수인 경우 then:
+		- q.push()

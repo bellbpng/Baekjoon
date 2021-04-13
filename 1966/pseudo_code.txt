@@ -1,0 +1,19 @@
+- 문서개수 N, 문서 위치 M 입력
+- 큐를 pair를 활용하여 index와 중요도(ipt)를 쌍으로 선언한다.
+    - for i=0 to N-1 do:
+        - 중요도(ipt) 입력
+        - 큐에는 <i, ipt>를 push
+        - 우선순위 큐에는 중요도(ipt)를 push
+        - 반복문을 모두 빠져나오면 중요도에 따라 큐에서 pop과 push 연산을 진행해야한다.
+        - while 큐가 비어있지 않으면 do:
+            - index 변수에 큐의 첫번째 요소(위치)를 대입
+            - value 변수에 큐의 두번째 요소(중요도)를 대입
+            - 큐의 맨 앞 요소는 pop
+            - if value가 우선순위 큐의 top과 같다면 then:
+                - 우선순위 큐의 맨 앞 요소를 pop
+                - 프린트 출력이 진행되므로 count 1 증가
+                - if index가 m과 같다면 then:
+                    - count 출력
+                    - 반복문 탈출
+            - else then:
+                - index와 value를 큐에 다시 push

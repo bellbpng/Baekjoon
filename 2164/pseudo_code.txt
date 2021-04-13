@@ -1,0 +1,13 @@
+- 정수 N 입력
+- 큐에 1~N까지 차례대로 입력
+- for i=1 to N do:
+	- q.push(i)
+- while 큐의 크기가 1보다 큰 경우 do:
+	- q.pop()
+	- if 큐의 크기가 1 then:
+		- q.front() 출력
+		- 프로그램 종료
+	- else then:
+		- q.push(q.front())
+		- q.pop()
+- q.front() 출력
