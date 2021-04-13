@@ -1,0 +1,14 @@
+- 정수 X 입력
+- 벡터 컨테이너 v를 X+1 길이만큼 할당
+- v[0] = 0, v[1] = 0, v[2] = 1, v[3] = 1 대입
+- for i=4 to X do:
+	- if i가 only 2의 배수 then:
+		- (v[i/2] > v[i-1]) ? (v[i] = v[i-1] + 1) : (v[i] = v[i/2] + 1)
+	- else if i가 6의 배수 then:
+		- (v[i/2] > v[i/3]) ? (temp = v[i/3]) : (temp = v[i/2])
+		- (temp > v[i-1]) ? (v[i] = v[i-1] + 1) : (v[i] = temp + 1)
+	- else if i가 only 3의 배수 then:
+		- (v[i/3] > v[i-1]) ? (v[i] = v[i-1] + 1) : (v[i] = v[i/3] + 1)
+	- else
+		- v[i] = v[i-1] + 1
+- 반복문을 빠져나오면 v[X]를 출력
