@@ -1,0 +1,11 @@
+- 원판의 개수 N 입력
+- 벡터 컨테이너 v 활용. pair를 이용해서 <원판 처음 위치, 이동 후 위치>를 함께 담는다.
+- 이동시키기 전에 원판이 놓인 위치 from, 중간지점 temp, 목표지점 to로 함수 매개변수 선언
+- function hanoiTower(원판 개수 n, from, temp, to):
+	- if n이 1 then:
+		- v.push_back({from, to})
+	- else then:
+		- (n-1)개 원판을 from에서 temp로 옮긴다. hanoiTower(n-1, from, to, temp)
+		- v.push_back({from, to})
+		- (n-1)개 원판을 temp에서 to로 옮긴다. hanoiTower(n-1, temp, from, to)
+- 재귀호출이 모두 끝나면 벡터의 크기와 요소 출력
