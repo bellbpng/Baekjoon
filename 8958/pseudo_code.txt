@@ -1,0 +1,15 @@
+- 테스트 케이스 개수 T 입력
+- for t=1 to T do:
+	- OX퀴즈결과 문자열 입력. string 변수 str에 대입
+	- str에 저장된 문자 하나하나를 확인한다.
+	- 점수 총합을 담는 변수 total를 선언하고 0으로 초기화
+	- for i=0 to length of str do:
+		- if str[i]가 'O' then:
+			- 스택 s에 push
+		- else
+			- 문제 점수를 담는 score변수 선언하고 1로 초기화
+			- while 스택 s가 빌때까지 do:
+				- total += score
+				- score 1증가
+				- 스택 pop
+	- total 출력

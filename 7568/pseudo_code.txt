@@ -1,0 +1,16 @@
+- input N: total number of people
+- declare struct
+	- typdef struct body
+		- int weight
+		- int height
+- input information by using vector container v
+	- for i=0 to N-1 do:
+		- using body variable temp
+		- v.push_back(temp)
+- search for upper grade than me
+	- for i=0 to N-1 do:
+		- int grade = 1
+		- for j=0 to N-1 do:
+			- if (v[j].weight>v[i].weight && v[j].height>v[i].height) then:
+				- grade++
+		- print grade and ' '

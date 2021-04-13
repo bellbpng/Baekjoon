@@ -1,0 +1,9 @@
+- N 입력
+- N개의 정수가 공백을 기준으로 입력됨
+	- 벡터 컨테이너 v를 활용
+- max, min에 v[0]을 대입
+- 반복문을 이용하여 max와 min을 탐색
+	- for i=1 to v.size()-1 do:
+		- if max<v[i] then max=v[i]
+		- if min>v[i] then min=v[i]
+- max, min 출력
