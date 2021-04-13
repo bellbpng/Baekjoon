@@ -1,0 +1,17 @@
+##Soultion 1## 시간복잡도 O(n)
+- string 변수 str에 문자열 입력
+- 반복문을 통해 문자 10개를 확인하면 다음 인덱스에 개행(\n)문자를 삽입
+	- k = 0 // 문자 카운트 변수
+	- for i=0 to length of str do: // 조건(i<str.length())에서 str.length()는 매번 연산됨
+		- k 1증가
+		- if k=10 then: insert함수 호출(인덱스, 반복횟수, 문자), k=0
+- 반복문을 빠져나오면 str 출력
+
+##Soultion 2## 시간복잡도 O(n)
+- string 변수 str에 문자열 입력
+- 반복문을 통해 문자 하나씩 출력, 10개를 출력하면 개행을 출력
+	- k=0 // 문자 카운트 변수
+	- for i=0 to length of str do:
+		- k 1증가
+		- 문자 str[i] 출력
+		- if k=10 then: 개행 출력, k=0

@@ -1,0 +1,8 @@
+- search the string until you find an alphabet using loop
+- for i=0 to length of string do:
+	- if find an alphabet then word_count += 1
+		- search the string until you find a space using loop
+		- if find an space then repeat this process
+		- while str[i] is an alphabet do: i += 1
+- print word_count
+		
