@@ -1,0 +1,36 @@
+- 큐의 크기 N, 뽑아낼 수 개수 M 입력
+- 덱 dq에 반복문을 이용해 1부터 N까지 push_back
+	- for i=1 to N do:
+		- dq.push_back(i)
+- 수의 위치가 공백으로 구분되어 입력됨(1<=index<=N)
+- index가 N개 입력되지만 하나가 입력될 때마다 큐에서 뽑아내는 연산 진행.
+- 덱에서는 수를 뽑아내기 위한 data 이동이 일어난다.
+- function rightMove:
+	- 연산 횟수를 체크하는 cnt 변수 1 증가
+	- 변수 temp에 dq.back() 대입
+	- dq.pop_back()
+	- dq.push_front(temp)
+- function leftMove:
+	- 연산 횟수를 체크하는 cnt 변수 1 증가
+	- 변수 temp에 dq.front() 대입
+	- dq.pop_front()
+	- dq.push_back(temp)
+- 사용자에게 뽑아낼 데이터의 위치 정보를 입력받는다. 
+- 하나의 위치정보를 받을 때마다 데이터 추출까지 이루어진다.
+- for i=0 to N-1 do:
+	- FirstIndex 입력
+	- while true do :
+		- if dq.front()가 뽑아내려는 수 then:
+			- dq.pop()
+			- 무한루프 탈출
+		- else then:
+			- 뽑아내려는 수의 위치를 찾는다
+			- for i=0 to dq.size() do:
+				- if FirstIndex와 dq[i]가 같다 then:
+					- AfterIndex = i+1
+					- 반복문 탈출
+		- if dq.size/2 +1 >= AfterIndex then:
+			- leftMove
+		- else
+			- rightMove
+- 반복문을 빠져나오면 cnt 출력

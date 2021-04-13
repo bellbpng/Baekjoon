@@ -1,0 +1,47 @@
+- push_front X: 정수 X를 덱의 앞에 넣는다.
+- push_back X: 정수 X를 덱의 뒤에 넣는다.
+- pop_front: 덱의 가장 앞에 있는 수를 빼고, 그 수를 출력한다. 만약, 덱에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+- pop_back: 덱의 가장 뒤에 있는 수를 빼고, 그 수를 출력한다. 만약, 덱에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+- size: 덱에 들어있는 정수의 개수를 출력한다.
+- empty: 덱이 비어있으면 1을, 아니면 0을 출력한다.
+- front: 덱의 가장 앞에 있는 정수를 출력한다. 만약 덱에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+- back: 덱의 가장 뒤에 있는 정수를 출력한다. 만약 덱에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+
+- 명령의 수 N 입력
+- for i=1 to N do:
+	- 공백을 포함하는 문자열을 변수 str에 입력받는다.
+	- if pop_front then:
+		- if 덱이 empty then:
+			- -1 출력
+		- else then:
+			- front 출력
+			- pop_front()로 요소 삭제
+	- else if pop_back then:
+		- if 덱이 empty then:
+			- -1 출력
+		- else then:
+			- back 출력
+			- pop_back()로 요소 삭제
+	- else if size then:
+		- size() 출력
+	- else if empty then:
+		- empty를 정수형으로 변환하여 출력
+	- else if front then:
+		- if 덱이 empty then:
+			- -1 출력
+		- else then:
+			- front 출력
+	- else if back then:
+		- if 덱이 empty then:
+			- -1 출력
+		- else then:
+			- back 출력
+	- else if str[5] = 'f' then:
+		- char형 포인터 temp에 str[11] 주소 대입
+		- atoi로 정수변환
+		- push_front()
+	- else then:
+		- char형 포인터 temp에 str[10] 주소 대입
+		- atoi로 정수변환
+		- push_back()
+*/
