@@ -1,0 +1,26 @@
+- 수 개수 n 입력
+- n개의 줄에 수열을 이루는 수를 하나씩 입력
+- 수열을 만들기 위한 스택 s와 pop으로 이미 사용한 수를 담는 스택 l을 선언
+- push와 pop 연산 순서를 담는 벡터 c 선언
+- 스택 l은 처음에 0을 push한 상태로 시작
+- 벡터 컨테이너 v에 수열을 입력받는다.
+- for i=1 to n do:
+	- 변수 input에 수 입력
+	- v.push_back(input)
+- for i=0 to v.size do:
+	- if 스택 s가 empty 또는 top of s < v[i] then:
+		- 스택 l의 top 원소를 확인하여 push 연산을 진행
+		- for j=top of l + 1 to v[i] do:
+			- s에 push, l에 push
+			- 벡터 c에 '+' push_back
+		- push가 끝나면 s에 pop 진행 
+		- 벡터 c에 '-' push_back
+	- else if top of s == v[i] then:
+		- s에 pop 진행
+		- 벡터 c에 '-' push_back
+	- else if top > v[i] then:
+		- "NO" 출력
+		- 프로그램 종료
+- for i=0 to size of c do:
+	- c[i] 출력
+		
