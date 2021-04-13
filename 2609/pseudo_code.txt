@@ -1,0 +1,7 @@
+- 두 자연수 A,B 입력
+- 최대공약수 찾기
+	- A와 B의 공약수를 찾는다.
+	- 공약수의 최대값을 찾는다. (MaxCommonDiv)
+- 최소공배수 찾기
+	- MinCommonMul = MaxCommonDiv * (A / MaxCommonDiv) * (B / MaxCommonDiv)
+- 최대공약수와 최소공배수를 출력한다.
