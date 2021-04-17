@@ -1,0 +1,13 @@
+- 첫 줄에 문자열을 입력 받는다. 변수 str
+- 문자열을 탐색, index 변수 선언. 0으로 초기화
+- 단어의 개수를 세는 count 변수 선언, 0으로 초기화
+- while true do:
+	- if str[i]가 NULL then 무한루프 탈출
+	- else if str[i]가 공백문자 then index 1증가
+	- else if str[index]가 알파벳 then:
+		- index 1 증가
+		- while str[index]가 공백이 아닌동안 do:
+			- index 1 증가
+		- 공백이어서 반복문을 빠져나오면 단어개수 count 1 증가
+- 무한루프를 빠져나오면 단어의 개수 count 출력
+
