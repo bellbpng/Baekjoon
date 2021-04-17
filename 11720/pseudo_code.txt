@@ -1,7 +1,0 @@
-- input numbers as a string
-- check a character from '0' to '9' and change it into an integer
-	- use ASCII-code value
-	- init diff = '1' - 1
-	- for i = 0 to length of str do:
-		- result += str[i] - diff
-- print result
