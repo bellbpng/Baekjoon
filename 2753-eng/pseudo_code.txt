@@ -1,0 +1,8 @@
+- input date
+- set two conditions, date is..
+	1. (multiple of 4) AND (not multiple of 100)
+	2. multiple of 400
+- these conditions operate with OR
+- if con1 OR con2 then print(1)
+- else print(0)
+ 
