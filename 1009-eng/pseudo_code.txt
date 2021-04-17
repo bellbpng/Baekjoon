@@ -1,0 +1,19 @@
+- find the unit disit of a
+- find the period when repeating power with b
+	- unit = a%10
+	- period = 1
+	- temp = unit
+	- while true do:
+		- put the unit of temp in vector container v
+		- temp = (temp*unit)%10
+		- if temp == unit then break
+		- else then:
+			- period += 1
+- R = b % period
+- can find last-data-unit by using R
+- if R == 0 then: the index of last-data-unit is period-1.
+	- if v[period-1] == 0 then print "10"
+	- else print v[period-1]
+- else then: the index of last-data-unit is R-1
+	- if v[R-1] == 0 then print "10"
+	- else then: print v[R-1]
