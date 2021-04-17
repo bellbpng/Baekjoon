@@ -1,8 +1,0 @@
-- init fibo as a vector container
-- push 0,1 in fibo
-- input n
-- if n<2 then print fibo[n]
-- else then:
-	- for i=2 to n do:
-		- push fibo[i-2]+fibo[i-1] in fibo[i]
-	- print fibo[n]
