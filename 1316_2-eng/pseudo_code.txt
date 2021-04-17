@@ -1,0 +1,25 @@
+<problem>
+그룹 단어란 단어에 존재하는 모든 문자에 대해서, 각 문자가 연속해서 나타나는 경우만을 말한다. 
+예를 들면, ccazzzzbb는 c, a, z, b가 모두 연속해서 나타나고, kin도 k, i, n이 연속해서 나타나기 때문에 그룹 단어이지만,
+aabbbccb는 b가 떨어져서 나타나기 때문에 그룹 단어가 아니다.
+
+단어 N개를 입력으로 받아 그룹 단어의 개수를 출력하는 프로그램을 작성하시오.
+
+<solution>
+1) make succesive alphabets into an representative alphabet
+	- ex) "aaa" -> 'a'
+2) save the temporary word after (1) process
+	- ex) input word: "aaabbcccadd" -> temporary word: "abcad"
+	- for i=1 to (the length of input word - 1) do:
+		- if word[i-1] != word[i] then:
+			- tmp_word.push_back(word[i-1])
+	- tmp_word.push_back(last character of word) for preventing any drawbacks of last character
+3) count the number of alphabets in the result string, from 'a' to 'z'
+	- ex) if each alphabet count>1 then: the string is not a group-voca
+	- for i=0 to 25 do:
+		- for j=0 to (the length of tmp_word - 1) do:
+			- if (tmp_word[j] == 'a'+i) then: 
+				- count += 1
+		- if count>1 then break
+		- if k==25 then (group_voca_cnt += 1) 
+		# it means that the word is consisted of alphabets which are not separated.
