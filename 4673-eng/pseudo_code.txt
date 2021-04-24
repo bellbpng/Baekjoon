@@ -17,7 +17,7 @@ n을 d(n)의 생성자라고 한다. 위의 수열에서 33은 39의 생성자�
 10000보다 작거나 같은 셀프 넘버를 한 줄에 하나씩 출력하는 프로그램을 작성하시오.
 
 <Solution>
-- init gloaba varabile: vector<bool> selfNum(10001, true)
+- init gloabal varabile: vector<bool> selfNum(10001, true)
 - define d(n) by using loop
 	- change the number into a string and use ASCII value for adding each place value
 	- init diff = '1' - 1
