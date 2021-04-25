@@ -1,0 +1,21 @@
+<Problem>
+어떤 양의 정수 X의 각 자리가 등차수열을 이룬다면, 그 수를 한수라고 한다. 
+등차수열은 연속된 두 개의 수의 차이가 일정한 수열을 말한다. 
+N이 주어졌을 때, 1보다 크거나 같고, N보다 작거나 같은 한수의 개수를 출력하는 프로그램을 작성하시오. 
+
+<Solution>
+- search all positive integers less than N by using loop
+- change an integer to a string to find the difference in the value of each digit
+	- for i=1 to N do:
+		- init num = to_string(i)
+		- init chk = true  # for checking whether integer i is what we are looking for.
+		- init diff_last = num[1] - num[0]
+		- for j=1 to num.length()-1 do:
+			- init a_front = num[j]
+			- init a_back = num[j+1]
+			- init diff_present = a_back - a_front
+			- if d_last != d_present then:
+				- chk = false
+				- break
+		- if chk==true then count +=1
+	
