@@ -1,0 +1,38 @@
+<Problem>
+두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
+
+입력
+첫째 줄에 A와 B가 주어진다. (0 < A,B < 10의 1만승)
+
+<Soultion>
+- input two numbers, A and B, as strings
+- find longNum, shortNum
+	- if A.length() >= B.length() then:
+		- longNum = A
+		- shortNum = B
+	- else then:
+		- longNum = B
+		- shortNum = A
+- use ASCII value to calcuate data of character
+	- init diff = '1' - 1
+- store data in stack type variable to print reversely
+	- init stack<char> result
+- implement operations that sum each digit of A, B and carry
+	- for i = shortNum.length()-1 to 0 do:
+		- num1 = longNum[index1]-diff
+		- num2 = shortNum[index2]-diff
+		- temp = num1 + num2 + carry
+		- if temp >= 10 then:
+			- tmp = temp%10 + diff
+			- result.push(tmp)
+			- carry = 1
+		- else then:
+			- tmp = temp + diff
+			- result.push(tmp)
+			- carry = 0
+- implement additional operations for the situation that the lengths of shortNum and longNum are different.
+	- same process above operation except for adding only carry and digits of longNum
+- finally, we should know whether the last carry is 1.
+	- if last carry==1 then:
+		- result.push('1')
+- print all elements of stack
