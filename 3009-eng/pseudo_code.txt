@@ -1,0 +1,12 @@
+<Problem>
+세 점이 주어졌을 때, 축에 평행한 직사각형을 만들기 위해서 필요한 네 번째 점을 찾는 프로그램을 작성하시오.
+
+<Solution>
+- init struct Point including xpos, ypos ant input three points
+- find 4th point and make a rectangular parallel to x-axis and y-axis
+	- if x1==x2 then x4=x3
+	- else if x1==x3 then x4=x2
+	- else x4=x1
+	- if y1==y2 then y4=y3
+	- else if y1==y3 then y4=y2
+	- else y4=y1
