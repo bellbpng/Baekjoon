@@ -1,0 +1,26 @@
+<Problem>
+자연수 M과 N이 주어질 때 M이상 N이하의 자연수 중 소수인 것을 모두 골라 
+이들 소수의 합과 최솟값을 찾는 프로그램을 작성하시오.
+
+예를 들어 M=60, N=100인 경우 60이상 100이하의 자연수 중 소수는
+61, 67, 71, 73, 79, 83, 89, 97 총 8개가 있으므로, 
+이들 소수의 합은 620이고, 최솟값은 61이 된다.
+
+<Solution>
+- define function checkPrime(int num)
+	- if num==1 then return false
+	- else if num==2 then return true
+	- if num%2==0 then return false
+	- for i=3 to sqrt(num) do:
+		- if num%i==0 then return false
+	- return true
+- input M,N
+- init sum = 0 and vector<int> prime to store prime numbers
+- for M to N do:
+	- if checkPrime(i) is true then:
+		- prime.push_back(i)
+		- sum += i
+- if prime.empty() is true then: // no prime number
+	- print "-1"
+	- exit process
+- print "sum, prime[0]"
