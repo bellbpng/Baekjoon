@@ -7,7 +7,7 @@ N의 소인수분해 결과를 한 줄에 하나씩 오름차순으로 출력한
 - divide N from 2 until N's quotient is 1
 	- init idx=2
 	- while N!=1 do:
-		- if temp%idx==0 then:
+		- if N%idx==0 then:
 			- print "idx"
 			- N = N/idx
 		- else then: idx +=1
