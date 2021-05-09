@@ -1,0 +1,12 @@
+<Problem>
+한수는 지금 (x, y)에 있다. 직사각형의 왼쪽 아래 꼭짓점은 (0, 0)에 있고, 오른쪽 위 꼭짓점은 (w, h)에 있다. 
+직사각형의 경계선까지 가는 거리의 최솟값을 구하는 프로그램을 작성하시오.
+
+<Solution>
+- possible cases
+	- case1: x, case2: w-x, case3: y, case4: h-y
+- input x y w h
+- init min = x
+- if w-x<min then min=w-x
+- if y<min then min=y
+- if h-y<min then min=h-y
