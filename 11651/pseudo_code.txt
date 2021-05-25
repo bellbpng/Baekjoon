@@ -1,0 +1,19 @@
+<Problem>
+2차원 평면 위의 점 N개가 주어진다. 
+좌표를 y좌표가 증가하는 순으로, y좌표가 같으면 x좌표가 증가하는 순서로 
+정렬한 다음 출력하는 프로그램을 작성하시오.
+
+<Solution>
+- use function sort() in header file <algorithm>
+- define struct Point 
+	- int xpos
+	- int ypos
+- define function comp(Point p1, Point p2)
+	- if p1.ypos == p2.ypos then: 
+		- return p1.xpos < p2.xpos
+	- else then: 
+		- return p1.ypos < p2.ypos
+- input N and N points, xpos & ypos, in a vector container v
+- sort(v.begin(), v.end(), comp)
+- print "all elements of v"
+
