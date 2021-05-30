@@ -1,4 +1,4 @@
------Source1. Pascal's triangle : recursion method-----
+//-----Source1. Pascal's triangle : recursion method-----
 #include <iostream>
 using namespace std;
 
@@ -15,7 +15,7 @@ int main()
 	printf("%d\n", result);
 }
 
------Source2. loop---
+//-----Source2. loop---
 #include <iostream>
 using namespace std;
 
