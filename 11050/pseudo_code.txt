@@ -1,0 +1,19 @@
+<Problem>
+자연수 n과 정수 k가 주어졌을 때 이항 계수 nCk를 구하는 프로그램을 작성하시오.
+
+-----<Solution1> recursion method (Pascal's triangle)-----
+- define function comb(int n, int k)
+	- if k==0 OR n==k then: return 1
+	- else then:
+		- return comb(n-1,k-1) + comb(n-1,k)
+- input n, k
+- result = comb(n,k)
+- print "result"
+
+-----<Solution2> loop method-----
+- input n,k
+- init num1=1, num2=1
+- for i=0 to k do:
+	- num1 = num1 * (n-i)
+	- num2 = num2 * (i+1)
+- print "num1/num2"
