@@ -1,0 +1,25 @@
+<Problem>
+총 다섯줄의 입력이 주어진다. 각 줄에는 최소 1개, 최대 15개의 글자들이 빈칸 없이 연속으로 주어진다. 
+주어지는 글자는 영어 대문자 ‘A’부터 ‘Z’, 영어 소문자 ‘a’부터 ‘z’, 숫자 ‘0’부터 ‘9’ 중 하나이다. 
+각 줄의 시작과 마지막에 빈칸은 없다.
+
+영석이가 세로로 읽은 순서대로 글자들을 출력한다. 이때, 글자들을 공백 없이 연속해서 출력한다. 
+
+<Solution>
+- init string str[5] and input five strings
+- init char ch[5][15]={ }
+	- all elements are NULL(ASCII value 0)
+- assign all characters in ch[row][col]
+	- init idx=0
+	- for row=0 to 5 do:
+		- init len = str[idx].length()
+		- for col=0 to len do:
+			- ch[row][col] = str[idx].front()
+			- str[idx].erase(0,1)
+		- idx += 1
+- read all elements in ch[row][col] according to column
+	- for col=0 to 15 do:
+		- for row=0 to 5 do:
+			- if ch[row][col]==0 then: continue
+			- print "ch[row][col]"
+
