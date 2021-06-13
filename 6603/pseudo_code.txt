@@ -37,5 +37,6 @@ k(k>6)개의 수를 골라 집합 S를 만든 다음 그 수만 가지고 번호
 	- for i=0 to k-1 do:
 		- input lotto[i]
 	- dfs(0,0)
+	- print "\n"
 
 
