@@ -1,0 +1,16 @@
+<Problem>
+N!에서 뒤에서부터 처음 0이 아닌 숫자가 나올 때까지 0의 개수를 구하는 프로그램을 작성하시오.
+
+<Solution>
+- input n
+- if n==0 then:
+	- print "0" and exit process
+- count the number of 5 to find the number of 0.
+	- init cnt=0
+	- for i=2 to n do:
+		- init tmp = i
+		- while tmp%5==0 do:
+			- cnt += 1
+			- tmp = tmp / 5
+	- print "cnt"
+
