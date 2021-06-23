@@ -1,0 +1,24 @@
+<Problem>
+2진수가 주어졌을 때, 8진수로 변환하는 프로그램을 작성하시오.
+
+<Solution>
+- input a binary num as a string named "binary"
+- init len = binary.length()
+- init vector<char> v and stack<int> oct
+- for i=len-1 to 0 step: -1 do:
+	- v.push_back(binary[i])
+	- if v.size()==3 then:
+		- init tmp=0
+		- for k=0 to 2 do:
+			- if v[k]=='1' then: tmp += pow(2,k)
+		- v.clear() // v.size()==0
+		- oct.push(tmp)
+- if v.size()!=0 then:
+	- init tmp=0
+	- for i=v.size()-1 to 0 step: -1 do:
+		- if v[i]=='1' then: tmp ++ pow(2,i)
+	- oct.push(tmp)
+- while !oct.empty() do:
+	- print "oct.top()"
+	- oct.pop()
+
