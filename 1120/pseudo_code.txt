@@ -1,0 +1,28 @@
+<Problem>
+길이가 N으로 같은 문자열 X와 Y가 있을 때, 두 문자열 X와 Y의 차이는 X[i] ≠ Y[i]인 i의 개수이다. 
+예를 들어, X=”jimin”, Y=”minji”이면, 둘의 차이는 4이다.
+
+두 문자열 A와 B가 주어진다. 이때, A의 길이는 B의 길이보다 작거나 같다. 
+이제 A의 길이가 B의 길이와 같아질 때 까지 다음과 같은 연산을 할 수 있다.
+
+1. A의 앞에 아무 알파벳이나 추가한다.
+2. A의 뒤에 아무 알파벳이나 추가한다.
+이때, A와 B의 길이가 같으면서, A와 B의 차이를 최소로 하는 프로그램을 작성하시오.
+
+<Solution>
+- input two strings, A and B
+- init diff = B.length() - A.length()
+- init vector<int> v // assign the number of different characters in A and B
+- make the string A to take equal length of B's one
+	- while A.length() != B.length() do:
+		- A.push_back(' ')
+- while true do:
+	- init cnt = 0
+	- for i=0 to B.length()-1 do:
+		- if A[i]!=B[i] then: cnt+=1
+	- v.push_back(cnt)
+	- if isalpha(A.back()) then: break
+	- A.pop_back()
+	- A.insert(A.begin(), ' ')
+- init result = *min_element(v.begin(), v.end()) - diff
+- print "result"
