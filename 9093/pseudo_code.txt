@@ -1,0 +1,23 @@
+<Problem>
+문장이 주어졌을 때, 단어를 모두 뒤집어서 출력하는 프로그램을 작성하시오. 
+단, 단어의 순서는 바꿀 수 없다. 단어는 영어 알파벳으로만 이루어져 있다.
+
+<Solution>
+- input T
+- for i=0 to T-1 do:
+	- input a string in a variable "str"
+	- init len = str.length()
+	- init stack<char> s
+	- for j=0 to len-1 do:
+		- init tmp = str[j]
+		- if tmp==' ' then:
+			- while !s.empty() do:
+				- print "s.top()"
+				- s.pop()
+			- print " "
+		- else then:
+			- s.push(tmp)
+	- while !s.empty() do:
+		- print "s.top()"
+		- s.pop()
+	- print "\n"
