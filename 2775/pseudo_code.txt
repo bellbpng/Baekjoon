@@ -12,7 +12,7 @@
 - init two dimension array[15][15] that have all elements '0'
 - init all rooms in 0 floor from 1 to n
 	- for l=1 to n do:
-		- apt[0][1] = l
+		- apt[0][l] = l
 - implement operations that calculate the people of apt[floor][room]
 	- for floor=1 to k do:
 		- apt[floor][1] = apt[floor-1][1]
