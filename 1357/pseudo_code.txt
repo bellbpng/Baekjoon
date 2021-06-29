@@ -1,0 +1,29 @@
+<Problem>
+어떤 수 X가 주어졌을 때, X의 모든 자리수가 역순이 된 수를 얻을 수 있다. 
+Rev(X)를 X의 모든 자리수를 역순으로 만드는 함수라고 하자. 
+예를 들어, X=123일 때, Rev(X) = 321이다. 그리고, X=100일 때, Rev(X) = 1이다.
+
+두 양의 정수 X와 Y가 주어졌을 때, Rev(Rev(X) + Rev(Y))를 구하는 프로그램을 작성하시오
+
+<Solution>
+- define function Rev(string&str, int len)
+	- init stack<char> s
+	- for i=0 to len-1 do:
+		- s.push(str[i])
+	- init string tmp
+	- tmp.reserve(len)
+	- while !s.empty() do:
+		- tmp.push_back(s.top())
+		- s.pop()
+	- int rev = stoi(tmp)
+	- return rev
+- input X,Y in string variables
+- init len_x = X.length(), len_y = Y.length()
+- init rev_x = Rev(X, len_x), rev_y = Rev(Y, len_y)
+- init sum = rev_x + rev_y
+- init string tmp = to_string(sum), len_tmp = tmp.length()
+- init result = Rev(tmp, len_tmp)
+- print "result"
+
+
+
