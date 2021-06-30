@@ -1,0 +1,16 @@
+<Problem>
+16진수 수를 입력받아서 10진수로 출력하는 프로그램을 작성하시오.
+
+<Solution>
+- input hexa in a variable, type string
+- init diff = '1' - 1, len = hexa.length()
+- init result = 0
+- for i=len-1 to 0 step: -1 do:
+	- if isalpha(hexa[i]) then:
+		- result += pow(16, len-1-i)*(hexa[i]-'A'+10)
+	- else then:
+		- result += pow(16, len-1-i)*(hexa[i]-diff)
+- print "result"
+
+
+
