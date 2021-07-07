@@ -1,0 +1,20 @@
+<Problem>
+가이우스 율리우스 카이사르(Gaius Julius Caesar)는 고대 로마 군인이자 정치가였다. 
+카이사르는 비밀스럽게 편지를 쓸 때, 
+'A'를 'D로', 'B'를 'E'로, 'C'를 'F'로... 이런 식으로 알파벳 문자를 3개씩 건너뛰어 적었다고 한다.
+
+26개의 대문자 알파벳으로 이루어진 단어를 카이사르 암호 형식으로 
+3문자를 옮겨 겹치지 않게 나열하여 얻은 카이사르 단어가 있다. 
+이 카이사르 단어를 원래 단어로 돌려놓는 프로그램을 작성하시오.
+
+<Solution>
+- input string in a variable, str
+- init len = str.length()
+- for i=0 to len-1 do:
+	- init ch = str[i]-3
+	- if ch<'A' then:
+		- ch = 'Z'-('A'-ch)+1
+	- print "ch"
+
+
+
