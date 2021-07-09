@@ -1,0 +1,34 @@
+<Problem>
+N×N개의 수가 N×N 크기의 표에 채워져 있다. 
+(x1, y1)부터 (x2, y2)까지 합을 구하는 프로그램을 작성하시오. 
+(x, y)는 x행 y열을 의미한다.
+
+#입력
+첫째 줄에 표의 크기 N과 합을 구해야 하는 횟수 M이 주어진다. (1 ≤ N ≤ 1024, 1 ≤ M ≤ 100,000) 
+둘째 줄부터 N개의 줄에는 표에 채워져 있는 수가 1행부터 차례대로 주어진다. 
+다음 M개의 줄에는 네 개의 정수 x1, y1, x2, y2 가 주어지며, (x1, y1)부터 (x2, y2)의 합을 구해 출력해야 한다. 
+표에 채워져 있는 수는 1,000보다 작거나 같은 자연수이다. (x1 ≤ x2, y1 ≤ y2)
+
+#출력
+총 M줄에 걸쳐 (x1, y1)부터 (x2, y2)까지 합을 구해 출력한다.
+
+<Solution>
+- input N, M
+- init vector<vector<int>> prefix(N+1, vector<int>(N+1, 0))
+- init sum = 0
+- for i=1 to N do:
+	- for j=1 to N do:
+		- input an integer in a varaible, n
+		- sum += n
+		- prefix[i][j] = sum
+	- if i>1 then:
+		- prefix[i][0] = prefix[i-1][N]
+- for k=0 to M-1 do:
+	- init result=0
+	- input x1,y1,x2,y2
+	- for i=x1 to x2 do:
+		- result += prefix[i][y2] - prefix[i][y2-1]
+	- print "result"
+
+
+
