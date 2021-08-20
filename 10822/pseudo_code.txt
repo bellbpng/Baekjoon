@@ -22,4 +22,13 @@ S의 첫 문자와 마지막 문자는 항상 숫자이고, 콤마는 연속해�
 	- sum += stoi(&str[idx])
 - print "sum"
 
+<Solution 2>
+- input a string in a variable, str that is a array of characters
+- init char*ptr = strtok(str, ",")
+- init sum = 0
+- while ptr!=NULL do:
+	- sum += atoi(ptr)
+	- ptr = strtok(NULL, ",")
+- print "sum"
+
 
