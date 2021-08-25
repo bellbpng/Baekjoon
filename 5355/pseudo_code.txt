@@ -37,4 +37,19 @@
 			- num -= 7
 	- print the num to two decimal places
 
-
+<Best Solution> (My opinion)
+- input T
+- for i=0 to T-1 do:
+	- input a string in a variable, str
+	- init idx=0
+	- init num = stof(str)
+	- while str[idx++] != ' ' do
+	- for idx to str.length() do:
+		- init ch = str[idx];
+		- if ch=='@' then:
+			- num *= 3
+		- else if ch=='%' then:
+			- num += 5
+		- else if ch=='#' then:
+			- num -= 7
+	- print the num to two decimal places
