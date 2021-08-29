@@ -1,0 +1,32 @@
+<Problem>
+1부터 N까지의 수를 이어서 쓰면 다음과 같이 새로운 하나의 수를 얻을 수 있다.
+
+1234567891011121314151617181920212223...
+
+이렇게 만들어진 새로운 수는 몇 자리 수일까? 이 수의 자릿수를 구하는 프로그램을 작성하시오.
+
+#입력
+첫째 줄에 N(1 ≤ N ≤ 100,000,000)이 주어진다.
+
+#출력
+첫째 줄에 새로운 수의 자릿수를 출력한다. 
+
+<Solution>
+- input N
+- init num = N/10, digits = 1
+- while num != 0 do:
+	- digits += 1
+	- num /= 10
+- init result = 0
+- for i=1 to digits-1 do:
+	- result += i * 9 * pow(10, i-1)
+- switch(digits)
+	- case 2: result += (N-9)*2
+	- case 3: result += (N-99)*3
+	- case 4: result += (N-999)*4
+	- case 5: result += (N-9999)*5
+	- case 6: result += (N-99999)*6
+	- case 7: result += (N-999999)*7
+	- case 8: result += (N-9999999)*8
+	- case 9: result += (N-99999999)*9
+- print "result"
