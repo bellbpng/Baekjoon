@@ -1,0 +1,24 @@
+<Problem>
+예제를 보고 규칙을 유추한 뒤에 별을 찍어 보세요.
+
+#입력
+첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.
+
+#출력
+첫째 줄부터 차례대로 별을 출력한다.
+
+<Solution>
+- input n
+- init chk = true
+- for i=0 to 2*n-1 do:
+	- for j=0 to n-1 do:
+		- if chk then:
+			- print "*"
+			- chk = false
+		- if !chk then:
+			- print " "
+			- chk = true
+	- print "\n"
+	- if n%2==0 then:
+		- if chk then: chk=false
+		- else then: chk=true
