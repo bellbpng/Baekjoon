@@ -1,0 +1,35 @@
+<Problem>
+대열이는 욱제의 친구다.
+
+“야 백대열을 약분하면 뭔지 알아?”
+“??”
+“십대일이야~ 하하!”
+n:m이 주어진다. 욱제를 도와주자. (...)
+
+#입력
+n과 m이 :을 사이에 두고 주어진다. (1 ≤ n, m ≤ 100,000,000)
+
+#출력
+두 수를 최대한으로 약분하여 출력한다.
+
+<Solution>
+- define function gcd(int& big, int& small)
+	- int r = big%small
+	- while r!=0 do:
+		- big = small, small = r
+		- r = big%small
+	- return small
+- char str[20]
+- input a string
+- parse the string to delimiter ":"
+	- char*ptr = strtok(str, ":")
+	- int n = atoi(ptr)
+	- ptr = strtok(NULL, ":")
+	- int m = atoi(ptr)
+- int big = n>m ? n : m
+- int small = n<m ? n : m
+- int GCD = gcd(big, small)
+- print "%d:%d" , n/GCD, m/GCD
+
+
+
