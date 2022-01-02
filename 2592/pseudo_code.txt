@@ -1,0 +1,15 @@
+- init count[100] = {0, }
+- init numbers[10] = {0, }
+- init sum = 0, avg = 0
+- for i=0 to 9 do:
+	- scanf("%d", &numbers[i])
+	- sum += numbers[i]
+	- init j = numbers[i]/10
+	- count[j] += 1
+- avg = sum/10
+- init max = 0, freq_num = 0
+- for j=0 to 99 do:
+	- if count[j] > max then:
+		- max = count[j]
+		- freq_num = j*10
+- printf("%d\n%d\n", avg, freq_num)
