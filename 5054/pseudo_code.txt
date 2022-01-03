@@ -1,0 +1,18 @@
+- define function sortAscend(vector<int>&v)
+	- for i=0 to v.size()-2 do:
+		- for j=i+1 to v.size()-1 do:
+			- if v[i]>v[j] then:
+				- init temp = v[i]
+				- v[i] = v[j]
+				- v[j] = temp
+- init t
+- scanf("%d", &t)
+- for i=0 to t-1 do:
+	- init n
+	- scanf("%d", &n)
+	- init vector<int> store(n)
+	- for j=0 to n-1 do:
+		- scanf("%d", &store[j])
+	- sortAscend(store)
+	- init distance = 2*(store[n-1] - store[0])
+	- printf("%d\n", distance)
