@@ -1,0 +1,13 @@
+- define function bool cmp(const int& a, const int& b)
+	- return a > b
+- init t
+- scanf("%d", &t)
+- for k=0 to t-1 do:
+	- init scores[5] = {0, }
+		- for i=0 to 4 do:
+		- scanf("%d", &scores[i])
+	- sort(score, score+5, cmp)
+	- if score[1] - score[3] >= 4 then:
+		- cout << KIN << endl
+	- else
+		- cout << score[1] + score[2] + score[3] << endl
