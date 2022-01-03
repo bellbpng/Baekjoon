@@ -1,0 +1,11 @@
+- init N, v
+- scanf("%d", &N)
+- init vector<int> data(N)
+- for i=0 to N-1 do:
+	- scanf("%d", &data[i])
+- scanf("%d", &v)
+- init cnt = 0
+- for i=0 to data.size()-1 do:
+	- if data[i]==v then:
+		- cnt += 1
+- printf("%d\n", cnt)
