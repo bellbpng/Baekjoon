@@ -1,0 +1,9 @@
+- init num[3] = {0, }
+- scanf("%d %d %d", &num[0], &num[1], &num[2])
+- for i=0 to 1 do:
+	- for j=i+1 to 2:
+		- if num[i]>num[j] then:
+			- init temp = num[i]
+			- num[i] = num[j]
+			- num[j] = temp
+- printf("%d %d %d\n", num[0], num[1], num[2])
