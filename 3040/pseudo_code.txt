@@ -1,0 +1,19 @@
+- init num[9] = {0, }
+- init total = 0
+- for i=0 to 8 do:
+	- scanf("%d", num+i)
+	- total += num[i]
+- init diff = total - 100
+- init idx1 = 0, idx2 = 0
+- init chk = false
+- for i=0 to 7 do:
+	- for j=i+1 to 8 do:
+		- if num[i]+num[j]==diff then:
+			- idx1 = i, idx2 = j
+			- chk = true, break
+	- if(chk) then:
+		- break
+- for i=0 to 8 do:
+	- if (i==idx1 || i==idx2) then:
+		- continue
+	- printf("%d\n", num[i])
