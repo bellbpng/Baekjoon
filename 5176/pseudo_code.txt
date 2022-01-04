@@ -1,0 +1,11 @@
+- init K
+- scanf("%d", &K)
+- for i=0 to K-1 do:
+	- init P, M
+	- scanf("%d %d", &P, &M)
+	- init vector<bool> seats(M+1, true)
+	- init tmp = 0, cnt = 0
+	- for j=0 to P-1 do:
+		- scanf("%d", &tmp)
+		- seats[tmp]==true ? seats[tmp]=false : cnt++
+	- printf("%d\n", cnt)
