@@ -1,0 +1,10 @@
+- define function bool cmp(const int& a, const int& b)
+	- return a>b
+- init T
+- scanf("%d", &T)
+- for i=0 to T-1 do:
+	- init num[10] = {0, }
+	- for j=0 to 9 do:
+		- scanf("%d", num+j)
+	- sort(num, num+10, cmp)
+	- printf("%d\n", num[2])
