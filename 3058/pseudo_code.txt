@@ -1,0 +1,11 @@
+- init T
+- scanf("%d", &T)
+- for i=0 to T-1 do:
+	- init sum = 0, tmp = 0, min = 100
+	- for j=0 to 6 do:
+		- scanf("%d", tmp)
+		- if tmp%2==0 then:
+			- sum += tmp
+			- if min > tmp then:
+				- min = tmp
+	- printf("%d %d\n", sum, min)
