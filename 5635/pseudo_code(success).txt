@@ -1,0 +1,13 @@
+# function
+- bool cmp(const pair<string, int>& p1, const pair<string, int>& p2)
+	- return p1.second > p2.second
+# main
+- int n
+- scanf("%d", &n)
+- vector<pair<string, int>> student(n)
+- for i=0 to n-1 do:
+	- int tmp[3] = {0, }
+	- cin >> student[i].first >> tmp[0] >> tmp[1] >> tmp[2]
+	- student[i].second = tmp[2]*1000 + tmp[1]*50 + tmp[0]
+- sort(student.begin(), studen.end(), cmp)
+- cout << student[0].first << "\n" << student[n-1].first << endl

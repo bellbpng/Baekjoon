@@ -1,0 +1,29 @@
+#data type
+- typedef struct student
+	- string name
+	- int day
+	- int month
+	- int year
+#function
+- bool cmp1(const student& a, const student& b)
+	- return a.year < b.year
+- bool cmp2(const student& a, const student& b)
+	- if a.year == b.year then:
+		- return a.month < b.month
+	- else
+		- return
+- bool cmp3(const student& a, const student& b)
+	- if a.month == b.month then:
+		- return a.day < b.day
+	- else
+		- return
+#main
+- int n
+- scanf("%d", &n)
+- vector<student> s(n)
+- for i=0 to n-1 do:
+	- cin >> s[i].name >> s[i].day >> s[i].month >> s[i].year
+- sort(s.begin(), s.end(), cmp1)
+- sort(s.begin(), s.end(), cmp2)
+- sort(s.begin(), s.end(), cmp3)
+- cout << s[0].name << "\n" << s[n-1].name << endl

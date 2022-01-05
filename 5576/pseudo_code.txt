@@ -1,0 +1,16 @@
+#function
+bool cmp(const int& a, const int& b)
+	- return a > b
+#main
+- init w[10] = {0, }, k[10] = {0, }
+- for i=0 to 9 do:
+	- scanf("%d", w+i)
+- for i=0 to 9 do:
+	- scanf("%d", k+i)
+- sort(w, w+10, cmp)
+- sort(k, k+10, cmp)
+- init wScore = 0, kScore = 0
+- for i=0 to 2 do:
+	- wScore += w[i]
+	- kScore += k[i]
+- printf("%d\n%d\n", wScore, kScore)
