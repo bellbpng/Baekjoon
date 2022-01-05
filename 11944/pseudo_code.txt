@@ -1,0 +1,16 @@
+#main
+- string N, int M
+- cin >> N >> M
+- int n = stoi(N), len = N.length(), cnt = 0
+- bool chk = false
+- for i=0 to n-1 do:
+	- cnt += len
+	- if cnt > M then:
+		- chk = true
+		- break
+	- cout << N
+- if chk==true  then:
+	- int diff = M - (cnt - len)
+	- if diff>0 then:
+		- for i=0 to diff-1 do:
+			- cout << N[i]
