@@ -1,0 +1,17 @@
+- int T
+- scanf("%d", &T)
+- for i=0 to T-1 do:
+	- int N
+	- scanf("%d", &N)
+	- vector<pair<int,float>> v(N)
+	- float sum = 0
+	- int credit = 0
+	- for j=0 to N-1 do:
+		- cin >> v[j].first >> v[j].second
+		- credit += v[j].first
+		- sum += v[j].first * v[j].second
+	- float gpa = sum / credit
+	- cout << credit << " "
+	- cout << fixed
+	- cout.precision(1)
+	- cout << gpa << endl
