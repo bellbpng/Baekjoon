@@ -1,0 +1,9 @@
+- int N
+- cin >> N
+- int result = 0
+- for i=0 to N-1 do:
+	- int student, apple
+	- cin >> student >> apple
+	- result += apple%student
+- cout << result << "\n"
+

@@ -1,0 +1,11 @@
+- int T
+- cin >> T
+- for i=0 to T-1 do:
+	- int s, n
+	- cin >> s >> n
+	- int price = s
+	- for j=0 to n-1 do:
+		- int q,p
+		- cin >> q >> p
+		- price += q*p
+	- cout << price
