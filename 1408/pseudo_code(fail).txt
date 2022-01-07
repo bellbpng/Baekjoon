@@ -1,0 +1,41 @@
+# define data type
+- typedef struct time
+	- int hour
+	- int min
+	- int sec
+
+# main
+- time now, start, remain
+- scanf("%d:%d:%d", &now.hour, &now.min, &now.sec)
+- scanf("%d:%d:%d", &start.hour, &start.min, &start.sec)
+- if start.hour==0 then:
+	- start.hour = 24
+- if start.sec-now.sec < 0 then:
+	- if start.min - 1 >= 0 then:
+		- start.min -= 1
+		- start.sec += 60
+	- else then:
+		- start.hour -= 1
+		- start.min += 59
+		- start.sec += 60
+- remain.sec = start.sec - now.sec
+- if start.min-now.min < 0 then:
+	- start.hour -= 1
+	- start.min += 60
+- remain.min = start.min - now.min
+- remain.hour = start.hour - now.hour
+- if remain.hour < 0 then:
+	- remain.hour += 24
+- string hh, mm, ss
+- hh = to_string(remain.hour)
+- mm = to_string(remain.min)
+- ss = to_string(remain.sec)
+- if hh.length() == 1 then:
+	- hh.insert(0, "0")
+- if mm.length() == 1 then:
+	- mm.insert(0,"0")
+- if ss.length() == 1 then:
+	- ss.insert(0,"0")
+- cout << hh << ':' << mm << ':' << ss << endl
+
+
