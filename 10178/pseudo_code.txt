@@ -1,0 +1,8 @@
+- int t
+- cin >> t
+- for i=0 to t-1 do:
+	- int c,v
+	- cin >> c >> v
+	- int give = c/v
+	- int remain = c%v
+	- cout << "You get " << give << " piece(s) and your dad gets " << remain << " piece(s)."
