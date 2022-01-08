@@ -1,0 +1,12 @@
+- int N
+- cin >> N
+- vector<int> v(N)
+- int score = 0, result = 0
+- for i=0 to N-1 do:
+	- cin >> v[i]
+	- if v[i]==1 then:
+		- score += 1
+		- result += score
+	- else then:
+		- score = 0
+- printf("%d\n", result)

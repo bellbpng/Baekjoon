@@ -1,0 +1,10 @@
+- int T
+- cin >> T
+- for i=0 to T-1 do:
+	- int n
+	- cin >> n
+	- int sum = 0, tmp
+	- for j=0 to n-1 do:
+		- cin >> tmp
+		- sum += tmp
+	- printf("%d\n", sum)
