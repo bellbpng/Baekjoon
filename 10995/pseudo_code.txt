@@ -1,0 +1,13 @@
+- int N
+- cin >> N
+- int row = 1
+- for j=0 to N-1 do:	
+	- if row%2==1 then:
+		- for i=0 to N-1 do:
+			- printf("* ")
+		- printf("\n")
+	- else then:
+		- for i=0 to N-1 do:
+			- printf(" *")
+		- printf("\n")
+	- row += 1

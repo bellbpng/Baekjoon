@@ -1,0 +1,8 @@
+- int N
+- cin >> N
+- for i=0 to N-1 do:
+	- for j = N-2-i to 0 do:
+		- printf(" ")
+	- for k = 0 to i do:
+		- printf("* ")
+	- printf("\n")
