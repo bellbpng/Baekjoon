@@ -1,0 +1,9 @@
+- bool assignment[30] = {false, }
+- for i=0 to 27 do:
+	- int idx
+	- scanf("%d", &idx)
+	- assignment[idx-1] = true
+- for i=0 to 29 do:
+	- if assignment[i]==false then:
+		- cout << i+1 << "\n"
+ 

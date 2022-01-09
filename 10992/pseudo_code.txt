@@ -1,0 +1,16 @@
+- int N
+- cin >> N
+- for i=0 to N-1 do:
+	- for j = i to N-2 do:
+		- printf(" ")
+	- printf("*")
+	- if i>0 && i<N-1 then:
+		- for k = 1 to i*2-1 do:
+			- printf(" ")
+	- else then:
+		- for k = 1 to i*2-1 do:
+			- printf("*")
+	- if i>0 then:
+		- printf("*\n")
+	- else then:
+		- printf("\n")
