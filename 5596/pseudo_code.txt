@@ -1,0 +1,11 @@
+- int S = 0, T = 0
+- for j=0 to 3 do:
+	- int tmp
+	- cin >> tmp		
+	- S += tmp
+- for j=0 to 3 do:
+	- int tmp
+	- cin >> tmp
+	- T += tmp
+- S>=T ? cout << S : cout << T
+ 
