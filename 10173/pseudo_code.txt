@@ -1,0 +1,12 @@
+- string str
+- while(true)
+	- getline(cin, str)
+	- if str=="EOI"
+		- break
+	- for i=0 to str.length()-1 do:
+		- if isupper(str[i]) then:
+			- str[i] = tolower(str[i])
+	- if str.find("nemo",0) != string::npos then:
+		- cout << "Found\n"
+	- else then:
+		- cout << "Missing\n"
