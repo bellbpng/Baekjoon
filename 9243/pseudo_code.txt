@@ -1,0 +1,20 @@
+# define function
+- void deleteFile(string& str)
+	- int len = str.length()
+	- for i=0 to len-1 do:
+		- if str[i]=='1' then:
+			- str[i] = '0'
+		- else then:
+			- str[i] = '1'
+
+# main
+- int N
+- cin >> N
+- string origin, deleted
+- cin >> origin >> deleted
+- for i=0 to N-1 do:
+	- deleteFile(origin)
+- if origin == deleted then:
+	- cout << "Deletion succeeded\n"
+- else then:
+	- cout << "Deletion failed\n"
