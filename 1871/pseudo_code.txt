@@ -1,0 +1,14 @@
+- int N
+- cin >> N
+- for i=0 to N-1 do:
+	- string str
+	- cin >> str
+	- int firstVal = 0
+	- for j=0 to 2 do:
+		- firstVal += pow(26, 2-j) * (str[j] - 'A')
+	- char* ptr = &str[4]
+	- int secondVal = atoi(ptr)
+	- if abs(firstVal - secondVal) <= 100 then:
+		- cout << "nice\n"
+	- else
+		- cout << "not nice\n"
