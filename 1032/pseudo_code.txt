@@ -1,0 +1,19 @@
+- cin >> n
+- vector<string> file_name(n+1)
+- for i=0 to n-1
+	- cin >> str
+	- file_name[i] = str
+- len = file_name[0].length
+- for i=0 to len-1
+	- ch = file_name[0][i]
+	- chk = true
+	- for j=1 to n-1
+		- if ch != file_name[j][i]
+			- chk = false
+			- break
+	- if chk == true
+		- file_name[n].push_back(ch)
+	- else
+		- file_name[n].push_back('?')
+- cout << file_name[n]
+	
