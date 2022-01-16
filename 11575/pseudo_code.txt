@@ -1,0 +1,9 @@
+- cin >> T
+- for i=0 to T-1:
+	- cin >> a >> b
+	- cin >> str
+	- len = str.length
+	- for j=0 to len-1 do:
+		- x = str[j]-'A'
+		- str[j] = (a*x+b)%26 + 'A'
+	- cout << str
