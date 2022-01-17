@@ -1,0 +1,14 @@
+- cin >> T
+- for i=0 to T-1:
+	- cin >> str
+	- num[10] = {false, }
+	- len = str.length
+	- cnt = 0
+	- for j=0 to len-1:
+		- idx = str[j]-'0'
+		- if num[idx]==false:
+			- num[idx] = true
+	- for k=0 to 9:
+		- if num[k]==true:
+			- cnt += 1
+	- cout << cnt
