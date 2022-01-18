@@ -1,0 +1,11 @@
+- cin >> T
+- for i=0 to T-1 do:
+	- cin >> a >> b
+	- start = a, end = b
+	- tmp = a%b
+	- while tmp != 0:
+		- start = end
+		- end = tmp
+		- tmp = start%end
+	- min = end*(a/end)*(b/end)W
+	- cout << min << " " << end << "\n" 
