@@ -1,0 +1,22 @@
+- cnt = 0
+- while true:
+	- cin >> a >> str >> b
+	- if str=="E" break
+	- cnt += 1
+	- if str == ">":
+		- chk = a > b ? true : false
+	- else if str == ">=":
+		- chk = a >= b ? true : false
+	- else if str == "<":
+		- chk = a < b ? true : false
+	- else if str == "<=":
+		- chk = a <= b ? true : false
+	- else if str == "==":
+		- chk = a == b ? true : false
+	- else:
+		- chk = a != b ? true : false
+	- if chk==true:
+		- result = "true"
+	- else:
+		- result = "false"
+	- cout << "Case " << cnt << ": " << result << "\n"
