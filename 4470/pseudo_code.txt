@@ -1,0 +1,5 @@
+- cin >> N
+- getchar()
+- for i=0 to N-1:
+	- getline(cin, str)
+	- cout << i+1 << ". " << str << "\n"
