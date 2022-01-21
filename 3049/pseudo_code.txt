@@ -1,0 +1,6 @@
+- cin >> n
+- val = 1
+- for i=0 to 3:
+	- val *= (n-i)
+- result = val / 24
+- cout << result
