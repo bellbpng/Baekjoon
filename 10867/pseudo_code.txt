@@ -1,0 +1,20 @@
+# define function
+- void sortAscend(vector<int> &v)
+	- for i=0 to v.size()-2:
+		- for j=i+1 to v.size()-1:
+			- if v[i] > v[j]:
+				- tmp = v[i]
+				- v[i] = v[j]
+				- v[j] = tmp
+			- else if v[i] == v[j]:
+				- v.erase(j)
+				- j -= 1
+
+# main
+- cin >> N
+- vector<int> v(N,0)
+- for i=0 to N-1:
+	- scanf("%d", &v[i])
+- sortAscend(v)
+- for i=0 to v.size()-1:
+	- printf("%d ", v[i])
