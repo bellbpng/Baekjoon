@@ -1,0 +1,7 @@
+- cin >> N
+- if N<=6:
+	- if N%2==0: cout << "CY", return 0
+	- else: cout << "SK", return 0
+- tmp = N%6
+- if tmp%2 == 1: cout << "CY"
+- else: cout << "SK"
