@@ -1,0 +1,14 @@
+# define function
+- void lowToUp(string& str)
+	- len = str.length()
+	- diff = 'a' - 'A'
+	- for i=0 to len-1:
+		- if isupper(str[i]):
+			- str[i] += diff
+
+# main
+- cin >> N
+- for i=0 to N-1:
+	- cin >> str
+	- lowToUp(str)
+	- cout << str << "\n"
