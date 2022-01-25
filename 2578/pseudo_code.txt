@@ -1,0 +1,55 @@
+# define global variable
+- bingo = 0
+
+# define function
+- void findRight(int arr[][5])
+	- for row=0 to 4:
+		- cnt = 0
+		- for col=0 to 4:
+			- if arr[row][col]==0: cnt += 1
+		- if cnt == 5: bingo += 1
+
+- void findDown(int arr[][5])
+	- for col=0 to 4:
+		- cnt = 0
+		- for row=0 to 4:
+			- if arr[row][col]==0: cnt+=1
+		- if cnt==5: bingo += 1
+
+- void findCross(int arr[][5])
+	- cnt = 0
+	- for n=0 to 4:
+		- if arr[n][n]==0: cnt+=1
+	- if cnt==5: bingo += 1
+	- cnt = 0
+	- for row=0 to 4:
+		- if arr[row][4-row]==0: cnt+=1
+	- if cnt==5: bingo += 1
+
+- void searchNum(int arr[][5], int tmp)
+	- chk = false
+	- for row=0 to 4:
+		- for col=0 to 4:
+			- if arr[row][col]==tmp:
+				- arr[row][col] = 0
+				- chk = true
+				- break
+		- if chk==true: break	
+# main
+- board[5][5] = {0, }
+- for row = 0 to 4:
+	- for col = 0 to 4:
+		- cin >> board[row][col]
+- cnt = 0
+- while true:
+	- cnt += 1
+	- cin >> tmp
+	- searchNum(board, tmp)
+	- if cnt >= 12:
+		- findRight(board)
+		- findDown(board)
+		- findCross(board)
+	- if bingo >= 3: break
+	- else: bingo = 0
+- cout << cnt
+
