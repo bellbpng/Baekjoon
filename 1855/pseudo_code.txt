@@ -1,0 +1,17 @@
+- cin >> K >> str
+- len = str.length()
+- R = (len / K)
+- vector<vector<char>> v(R, vector<char>(K))
+- idx = 0
+- for row = 0 to R-1:
+	- if row%2==0:
+		- for col=0 to K-1: v[row][col] = str[idx++]
+	- else:
+		- for col=K-1 downto 0: v[row][col] = str[idx++]
+- origin = str
+- idx = 0
+- for col = 0 to K-1:
+	- for row = 0 to R-1:
+		- origin[idx++] = v[row][col]
+- cout << origin
+			
