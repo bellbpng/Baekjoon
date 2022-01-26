@@ -1,0 +1,33 @@
+# define data type
+- typedef struct participant 
+	- int country
+	- int stdNum
+	- int score
+
+# define function
+- bool cmp(const participant& p1, const participant& p2)
+	- return p1.score > p2.score
+
+# main
+- cin >> N
+- vector<participant> p(N)
+- for i=0 to p.size()-1:
+	- scanf("%d %d %d", &p[i].country, &p[i].stdNum, &p[i].score)
+- sort(p.begin(), p.end(), cmp) // 내림차순 정렬
+- int gold[2] = {p[0].country, p[0].stdNum}
+- int silver[2] = {p[1].country, p[1].stdNum}
+- int bronze[2] = {0, }
+- if p[0].country == p[1].country
+	- int idx = 2
+	- while true:
+		- if p[idx].country != p[1].country:
+			- bronze[0] = p[idx].country
+			- bronze[1] = p[idx].stdNum
+			- break
+	- else: idx+=1
+- else:
+	- bronze[0] = p[2].country
+	- bronze[1] = p[2].stdNum
+- printf("%d %d\n%d %d\n%d %d\n", gold[0], gold[1], silver[0], silver[1], bronze[0], bronze[1])
+
+ 
