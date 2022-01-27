@@ -1,0 +1,20 @@
+# define function
+- void changePlace(const int& tmp, const int& i, vector<pair<int, int>>& l)
+	- for k=tmp to i-1:
+		- l[k].first += 1
+
+- bool cmp(const pair<int, int>& l1, const pair<int, int>& l2)
+	- return l1.first < l2.first
+
+# main
+- cin >> N
+- for i=0 to N-1:
+	- pair<int, int> p = make_pair(i, i + 1)
+	- l.push_back(p)
+	- cin >> num
+	- tmp = i - num
+	- changePlace(tmp, i, l)
+	- l[i].first = tmp
+	- sort(l.begin(), l.end(), cmp)
+- for i=0 to N-1:
+	- cout << l[i].val << " "
