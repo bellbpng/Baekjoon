@@ -1,0 +1,7 @@
+- cin >> T
+- for i=0 to T-1:
+	- cin >> k
+	- vector<int> stops(k+1,0)
+	- for l=k downto 1:
+		- stops[l-1] = (stops[l]+0.5)*2
+	- cout << stops[0] << endl
