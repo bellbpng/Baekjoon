@@ -1,0 +1,7 @@
+- cin >> T
+- for i=0 to T-1:
+	- cin >> N >> M
+	- legs = M*2
+	- u = legs - N
+	- t = M - u
+	- cout << u << " " << t << "\n"
