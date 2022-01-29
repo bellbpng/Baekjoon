@@ -1,0 +1,9 @@
+- cin >> N
+- cnt = 0
+- for B=1 to 499:
+	- A = B+1
+	- while true:
+		- if (A*A) - (B*B) > N: break
+		- if (A*A) - (B*B) == N: cnt += 1
+		- A += 1
+- cout << cnt
