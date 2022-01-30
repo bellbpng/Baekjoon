@@ -1,0 +1,8 @@
+- cin >> T
+- for i=0 to T-1:
+	- total = 0
+	- while true:
+		- cin >> tmp
+		- total += tmp
+		- if getchar()=='\n': break		
+	- cout << total << '\n'
