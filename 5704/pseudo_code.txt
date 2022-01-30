@@ -1,0 +1,13 @@
+- while true:
+	- alphabet[26] = {false, }
+	- getline(cin, str)
+	- if str=="*": break
+	- for j=0 to str.length()-1:
+		- if isalpha(str[j]):
+			- idx = str[j] - 'a'
+			- alphabet[idx] = true
+	- chk = true
+	- for j=0 to 25:
+		- if alphabet[j]==false: chk = false, break
+	- if chk==true: cout << Y
+	- else: cout << N

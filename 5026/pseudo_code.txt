@@ -1,0 +1,11 @@
+- cin >> N
+- for i=0 to N-1:
+	- cin >> str
+	- if str=="P=NP": cout << skipped << "\n"
+	- else:
+		- len = str.length()
+		- a = stoi(str)
+		- for j=1 to len-1:
+			- if str[j]=='+': ptr = &str[j]
+		- b = stoi(ptr)
+		- cout << a+b << "\n"

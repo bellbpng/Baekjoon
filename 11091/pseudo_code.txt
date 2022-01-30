@@ -1,0 +1,19 @@
+- cin >> N
+- for i=0 to N-1:
+	- alpha[26] = {false, }
+	- getline(cin, str)
+	- len = str.length()
+	- for j=0 to len-1:
+		- if isupper(str[j]): str[j] = tolower(str[j])
+		- if isalpha(str[j]):
+			- idx = str[j] - 'a'
+			- alpha[idx] = true
+	- flag = true, cnt = 0
+	- for j=0 to 25:
+		- if alpha[j]==false && cnt==0:
+			- flag = false, cnt = 1
+			- cout << "missing "
+		- if alpha[j]==false && cnt==1:
+			- ch = j + 'a'
+			- cout << ch
+	- if flag is true: cout << "pangram"
