@@ -1,0 +1,12 @@
+# define function
+- bool isVowel(const char& ch)
+	- switch (ch) 
+		- case 'a': case'e': case'i': case'o': case'u': return true
+	- return false
+
+# main
+- getline(cin, str)
+- len = str.length()
+- for i=0 to len-1:
+	- if isVowel(str[i]): cout << str[i], i += 2
+	- else: cout << str[i]
