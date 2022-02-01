@@ -1,0 +1,23 @@
+- case = 0
+- while true:
+	- cin >> first >> next
+	- if first=="END" && next=="END": break
+	- case += 1
+	- alpha_first[26] = {0, }, alpha_next[26] = {0, }
+	- len_first = first.length(), len_next = next.length()
+	- if len_first != len_next: cout << "Case " << case << ": different"
+	- else:
+		- for i=0 to len_first-1:
+			- idx = first[i] - 'a'
+			- alpha_first[idx]+=1
+		- for i=0 to len_next-1:
+			- idx = next[i] - 'a'
+			- alpha_next[idx]+=1
+		- chk = true
+		- for i=0 to 25:
+			- if alpha_first[i] != alpha_next[i]: chk = false, break
+		- if chk is true:
+			- cout << "Case " << case << ": same"
+		- else: cout << "Case " << case << ": different"
+
+		
