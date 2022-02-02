@@ -1,0 +1,10 @@
+- cin >> t
+- for i=0 to t-1:
+	- cin >> str
+	- len = str.length()
+	- chk = true
+	- for k=0, l=len-1 to k<=len/2 step: k+=1, l-=1
+		- if str[k]==str[l]: chk = true
+		- else: chk = false
+	- if chk is true: cout << "Do-it\n"
+	- else: cout << "Do-it-Not\n"
