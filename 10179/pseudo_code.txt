@@ -1,0 +1,4 @@
+- scanf("%d", &t)
+- for i=0 to t-1:
+	- scanf("%lf", &price)
+	- printf("$%.2lf", price*0.8)
