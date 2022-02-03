@@ -1,0 +1,7 @@
+- cin >> L >> A >> B >> C >> D
+- day_A = A/C
+- if A%C != 0: day_A += 1
+- day_B = B/D
+- if B%D != 0: day_B += 1
+- work_day = day_A > day_B ? day_A : day_B
+- cout << L-work_day

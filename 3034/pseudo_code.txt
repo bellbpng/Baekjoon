@@ -1,0 +1,6 @@
+- cin >> N >> W >> H
+- max = sqrt(W*W+H*H)
+- for i=0 to N-1:
+	- cin >> length
+	- if max < length: "NE"
+	- else: "DA"
