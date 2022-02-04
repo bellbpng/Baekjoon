@@ -1,0 +1,23 @@
+# define global varible
+- int alpha_cnt[26] = {0, }
+
+# define function
+- int findMax()
+	- max = alpha_cnt[0]
+	- for i=1 to 25:
+		- if max < alpha_cnt[i]: max = alpha_cnt[i]
+	- return max
+
+# main
+- while true:
+	- cin >> str
+	- if cin.eof()==true: break
+	- len = str.length()
+	- for i=0 to len-1:
+		- idx = str[i] - 'a'
+		- alpha_cnt[idx] += 1
+- max = findMax()
+- for i=0 to 25:
+	- if max==alpha_cnt[i]:
+		- ch = i + 'a'
+		- cout << ch
