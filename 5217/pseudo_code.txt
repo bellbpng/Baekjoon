@@ -1,0 +1,12 @@
+- cin >> t
+- for i=0 to t-1:
+	- cin >> n
+	- printf("Pairs for %d: ", n)
+	- if n%2 != 0:
+		- tmp = 0
+	- else:
+		- tmp = 1
+	- for j=1 to n/2-tmp: 
+			- printf("%d %d", j, n-j)
+			- if j != n/2-tmp: printf(", ")
+	- printf("\n)
