@@ -1,0 +1,7 @@
+- cin >> t
+- for i=0 to t-1:
+	- cin >> str1 >> str2
+	- len = str1.length(), cnt = 0
+	- for j=0 to len-1:
+		- if str1[j]!=str2[j]: cnt+=1
+	- printf("Hamming distance is %d.\n", cnt)
