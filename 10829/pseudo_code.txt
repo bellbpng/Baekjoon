@@ -1,0 +1,14 @@
+- cin >> n
+- vector<unsigned long long> power_two
+- power_two.push_back(1)
+- val = 2
+- while val <= n:
+	- power_two.push_back(val)
+	- val = val*2
+- len = power_two.size()
+- tmp = n
+- for i=len-1 downto 0:
+	- if tmp >= power_two[i]:
+		- printf("1")
+		- tmp = tmp - power_two[i]
+	- else: printf("0") 
