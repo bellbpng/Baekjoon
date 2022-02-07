@@ -1,0 +1,17 @@
+# define function
+- int findMaxCom(const int& a, const int& b)
+	- if a>b: first = a, second = b
+	- else: first = b, second = a
+	- tmp = first%second
+	- while tmp!=0:
+		- first = second, second = tmp
+		- tmp = first%second
+	- return second
+
+# main
+- cin >> n
+- for i=0 to n-1:
+	- cin >> a >> b
+	- max = findMaxCom(a,b)
+	- min = a/max * b/max * max
+	- cout << min
