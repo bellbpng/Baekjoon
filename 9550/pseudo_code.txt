@@ -1,0 +1,8 @@
+- cin >> t
+- for i=0 to t-1:
+	- cin >> n >> k
+	- child = 0
+	- for j=0 to n-1:
+		- cin >> tmp
+		- child += tmp/k
+	- cout << child
