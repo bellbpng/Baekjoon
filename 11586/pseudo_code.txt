@@ -1,0 +1,23 @@
+# main
+- cin >> n
+- vector<vector<char>> v(n, vector<char>(n))
+- for row=0 to n-1:
+	- for col=0 to n-1:
+		- cin >> v[row][col]
+- cin >> k
+- if k==2:
+	- for col=0 to n/2-1:
+		- for row=0 to n-1:
+			- tmp = v[row][col]
+			- v[row][col] = v[row][n-1-col]
+			- v[row][n-1-col] = tmp
+- else if k==3:
+	- for row=0 to n/2-1:
+		- for col=0 to n-1:
+			- tmp = v[row][col]
+			- v[row][col] = v[n-1-row][col]
+			- v[n-1-row][col] = tmp
+- for row=0 to n-1:
+	- for col=0 to n-1:
+		- cout << v[row][col]
+	- cout << endl
