@@ -1,0 +1,21 @@
+# define function
+bool cmp(const string& str1, const string& str2)
+	- return str1 < str2
+
+# main
+- cin >> n >> m
+- vector<string> no_hear(n)
+- len = n<m ? n : m
+- idx = 0
+- vector<string> result(len)
+- for i=0 to n-1:
+	- cin >> no_hear[i]
+- sort(no_hear.begin(), no_hear.end(), cmp)
+- for i=0 to m-1:
+	- cin >> str
+	- if binary_search(no_hear.begin(), no_hear.end(), str) is true:
+		- result[idx++] = str
+- sort(result.begin(), result.begin()+idx, cmp)
+- cout << idx
+- for i=0 to idx-1:
+	- cout << result[i]
