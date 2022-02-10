@@ -1,0 +1,17 @@
+- getline(cin, str)
+- idx = 0, cnt_happy = 0
+- while true:
+	- if str.find(":-)", idx) == string::npos: break
+	- else:
+		- idx = str.find(":-)", idx) + 1
+		- cnt_happy += 1
+- idx = 0, cnt_sad = 0
+- while true:
+	- if str.find(":-(", idx) == string::npos: break
+	- else:
+		- idx = str.find(":-(", idx) + 1
+		- cnt_sad += 1
+- if cnt_happy==0 && cnt_sad==0: none
+- else if cnt_happy == cnt_sad: unsure
+- else if cnt_happy > cnt_sad: happy
+- else: sad
