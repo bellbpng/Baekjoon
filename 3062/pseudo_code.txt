@@ -1,0 +1,15 @@
+- cin >> t
+- for i=0 to t-1:
+	- cin >> origin
+	- len = origin.length()
+	- for j=len-1 downto 0:
+		- rev.push_back(origin[j])
+	- tmp = stoi(origin) + stoi(rev)
+	- result = to_string(tmp)
+	- len = result.length()
+	- chk = true
+	- for j=0 to len/2 - 1:
+		- if result[j] != result[len-j]:
+			- NO, break
+	- if chk is true:
+		- YES
