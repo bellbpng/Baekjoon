@@ -1,0 +1,11 @@
+- cin >> n >> m
+- vector<string> v(n)
+- for i=0 to n-1:
+	- cin >> v[i]
+- for row=0 to n-1:
+	- for col=0 to m/2 - 1:
+		- tmp = v[row][col]
+		- v[row][col] = v[row][m-1-col]
+		- v[row][m-1-col] = tmp
+- for row=0 to n-1:
+	- cout << v[row] << endl

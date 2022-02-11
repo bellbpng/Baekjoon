@@ -1,0 +1,7 @@
+- cin >> a >> b
+- cin >> c >> d
+- if a==0 && d==0: cout << "0\n"
+- else if b==0 && c==0: cout << "0\n"
+- else: 
+	- cnt = (c+b) < (d+a) ? c+b : d+a
+	- cout << cnt
