@@ -1,0 +1,12 @@
+- cin >> n
+- map<string, bool, greater> list // key(string)을 기준으로 내림차순으로 정렬
+- for i=0 to n-1:
+	- cin >> name >> state
+	- if state=="enter":
+		- list[name] = true
+	- else:
+		- list[name] = false
+	
+- for iter to list.end()
+	- if iter.second is true:
+		- cout << iter.first
