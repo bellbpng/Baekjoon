@@ -1,0 +1,8 @@
+- cin >> n
+- priority_queue<int, vector<int> greater<int>> pq
+- for i=0 to n-1:
+	- cin >> x
+	- if x==0:
+		- if pq.empty(): 0 출력
+		- else: pq.top() 출력, pq.pop()
+	- else: pq.push(x)
