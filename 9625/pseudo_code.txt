@@ -1,0 +1,11 @@
+- cin >> k
+- if k==1: "0 1" 출력, return 0
+- else if k==2: "1 1" 출력, return 0
+- earlier_A = 1, earlier_B = 1
+- current_A = 0, current_B = 0
+- for i=3 to k:
+	- current_B = earlier_B + earlier_A
+	- current_A = earlier_B
+	- earlier_B = current_B
+	- earlier_A = current_A
+- "current_A current_B" 출력
