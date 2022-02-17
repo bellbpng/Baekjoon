@@ -1,0 +1,9 @@
+- while true:
+	- getline(cin, str)
+	- if str=="#": break
+	- len = str.length()
+	- total = 0
+	- for i=0 to len-1:
+		- if str[i]==' ': continue
+		- total += (i+1)*(str[i] - 'A' + 1)
+	- cout << total
