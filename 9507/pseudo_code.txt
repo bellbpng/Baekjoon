@@ -1,0 +1,8 @@
+- cin >> t
+- koong[68] = {1, 1, }
+- koong[2] = 2, koong[3] = 4
+- for i=0 to t-1:
+	- cin >> n
+	- for j=4 to n:
+		- koong[j] = koong[j-1] + koong[j-2] + koong[j-3] + koong[j-4]
+	- cout << koong[n]
