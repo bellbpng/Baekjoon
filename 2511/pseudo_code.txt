@@ -1,0 +1,21 @@
+- score_a[10] = {0, }, score_b[10] = {0, }
+- winner[10] = {D, }
+- credit_a = 0, credit_b = 0
+- for i=0 to 9:
+	- cin >> score_a[i]
+- for i=0 to 9:
+	- cin >> score_b[i]
+	- if score_a[i] > score_b[i]: winner[i] = 'A', credit_a += 3
+	- else if score_a[i] < score_b[i]: winner[i] = 'B', credit_b += 3
+	- else: credit_a += 1, credit_b += 1
+- if credit_a==10 && credit_b==10: total_winner = 'D'
+- else if credit_a > credit_b: total_winner = 'A'
+- else if credit_a < credit_b: total_winner = 'B'
+- else:
+	- idx_a = 0, idx_b = 0
+	- for i=0 to 9:
+		- if winner[i] == 'A': idx_a = i
+		- else if winner[i] == 'B': idx_b = i
+	- if idx_a > idx_b: total_winner = 'A'
+	- else: total_winner = 'B'
+- "credit_a credit_b \n total_winner" 출력
