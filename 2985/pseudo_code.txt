@@ -1,0 +1,16 @@
+- cin >> a >> b >> c
+- num1 = a, num2 = b, num3 = c
+- sign[2] = {'+', '='}
+- idx = 0, chk = true
+- while chk:
+	- if num1+num2==num3: sign[idx] = '+', chk = false
+	- else if num1-num2==num3: sign[idx] = '-', chk = false
+	- else if num1*num2==num3: sign[idx] = '*', chk = false
+	- else if num1/num2==num3: sign[idx] = '/', chk = false
+	- else: 
+		- sign[idx++] = '='
+		- tmp = num1
+		- num1 = num2
+		- num2 = num3
+		- num3 = tmp
+- cout << a << sign[0] << b << sign[1] << c
