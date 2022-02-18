@@ -1,0 +1,9 @@
+- while(true)
+	- cin >> tmp // 개행문자를 버퍼에 남겨두는 입력함수 활용
+	- str = str + tmp // 개행문자를 제외한 문자열 이어붙이기
+	- if cin.eof() is true: break // 파일의 끝에 도달하면 입력 종료
+- stringstream ss(str) // stringstream 을 활용해서 문자열 파싱
+- total = 0
+- while getline(ss, token, ',')
+	- total += stoi(token)
+- total 출력
