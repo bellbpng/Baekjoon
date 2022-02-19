@@ -1,0 +1,9 @@
+- for i=0 to 2:
+	- cin >> h_work >> m_work >> s_work
+	- cin >> h_home >> m_home >> s_home
+	- h = h_home - h_work
+	- m = m_home - m_work
+	- s = s_home - s_work
+	- if s<0: s += 60, m -= 1
+	- if m<0: m += 60, h -= 1
+	- printf("%d %d %d\n", h, m, s)
