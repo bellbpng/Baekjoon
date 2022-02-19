@@ -1,0 +1,8 @@
+- cin >> str
+- cin >> n
+- cnt = 0
+- for i=0 to n-1:
+	- cin >> s
+	- s = s + s
+	- if s.find(str): cnt++
+- cout << cnt 
