@@ -1,0 +1,11 @@
+- cin >> n
+- for i=0 to n-1:
+	- getline(cin, s)
+	- stm.str(s) // generate stringstream stm
+	- stm >> first >> second
+	- cnt = 0
+	- for j=0 to s.length()-1:
+		- if cnt==2: break
+		- if s[j]==' ': idx = j, cnt += 1
+	- ptr = &s[idx+1]
+	- "ptr first second" 출력
