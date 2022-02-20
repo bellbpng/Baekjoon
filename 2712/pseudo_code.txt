@@ -1,0 +1,21 @@
+- kg = 2.2046 (kg -> lb)
+- lb = 0.4536 (lb -> kg)
+- liter = 0.2642 (liter -> gallon)
+- gallon = 3.7854 (gallon -> liter)
+- cin >> t
+- for i=0 to t-1:
+	- cin >> value >> unit
+	- if unit=="kg": 
+		- value = value * kg
+		- "value lb" 출력
+	- else if unit=="lb":
+		- value = value*lb
+		- "value kg" 출력
+	- else if unit=="l":
+		- value = value*liter
+		- "value g" 출력
+	- else:
+		- value = value*gallon
+		- "value l" 출력
+
+			
