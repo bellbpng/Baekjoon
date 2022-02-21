@@ -1,0 +1,9 @@
+- cin >> n >> m
+- vector<int> v(2*m)
+- for i=0 to v.size()-1:
+	- cin >> v[i]
+- for i=1 to n:
+	- cnt = 0
+	- for iter : v
+		- if iter == i: cnt[i-1] += 1
+	- "cnt" 출력
