@@ -1,0 +1,11 @@
+- cin >> a >> b
+- len_a = a.length(), len_b = b.length()
+- a_max = a, b_max = b
+- for i=0 to len_a-1:
+	- if a[i]=='5': a_max[i] += 1
+	- else if a[i]=='6': a[i] -= 1
+- for i=0 to len_b-1:
+	- if b[i]=='5': b_max[i] += 1
+	- else if b[i]=='6': b[i] -= 1
+- min = stoi(a) + stoi(b)
+- max = stoi(a_max) + stoi(b_max)
