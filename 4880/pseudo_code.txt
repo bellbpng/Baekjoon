@@ -1,0 +1,5 @@
+- while true:
+	- cin >> a >> b >> c
+	- if (a==0 && b==0) && c==0: break
+	- if (b-a) == (c-b): "AP", next = c + b - a
+	- else: "GP", r = b/a, next = c * r
