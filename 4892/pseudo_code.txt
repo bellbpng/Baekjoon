@@ -1,0 +1,13 @@
+- cnt = 0
+- while true:
+	- cin >> n0
+	- if n0==0: break
+	- cnt += 1
+	- n1 = 3*n0
+	- chk = false // n1 is odd
+	- if n1%2==0: chk = true // n1 is even
+	- if chk is true: n2 = n1/2
+	- else: n2 = (n1+1) / 2
+	- n3 = 3*n2
+	- n4 = n3/9
+	- cnt, n1의 짝홀수 여부, n4 형식에 맞게 출력
