@@ -1,0 +1,11 @@
+- cin >> n
+- vector<int> basket(n)
+- for i=0 to n-1: basket[i] = i+1
+- cin >> m
+- for l=0 to m-1:
+	- cin >> i >> j
+	- tmp = basket[i-1]
+	- basket[i-1] = basket[j-1]
+	- basket[j-1] = tmp
+- for auto iter : basket
+	- iter 출력
