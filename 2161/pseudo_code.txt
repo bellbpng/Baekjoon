@@ -1,0 +1,10 @@
+- cin >> n
+- queue<int> q
+- for i=0 to n-1:
+	- q.push(i+1)
+- while true:
+	- if q.size()==1: break
+	- q.front() 출력, q.pop()
+	- tmp = q.front()
+	- q.pop(), q.push(tmp)
+- q.front() 출력
