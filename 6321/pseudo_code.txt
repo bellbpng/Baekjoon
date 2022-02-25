@@ -1,0 +1,6 @@
+- cin >> n
+- for i=0 to n-1:
+	- cin >> str
+	- for auto iter : str
+		- if iter=='Z': 'A'출력
+		- else: 'iter+1' 출력
