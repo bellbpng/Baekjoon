@@ -1,0 +1,20 @@
+- cin >> n
+- for i=0 to n-1:
+	- getline(cin, str)
+	- alpha[26] = {0, }
+	- len = str.length()
+	- for j=0 to len-1:
+		- if isupper(str[j]): str[j] = tolower(str[j])
+		- if isalpha(str[j]): idx = str[j]-'a', alpha[idx]+=1
+	- flag = true // if flag is false, the pangram is determined
+	- for j=0 to 25:
+		- if alpha[j]==0: "Not a pangram", flag = false, break
+	- if flag is true:
+		- for j=0 to 25:
+			- if alpha[j]==1: "Pangram!", flag = false, break 
+	- if flag is true:
+		- for j=0 to 25:
+			- if alpha[j]==2: "Double pangram!!", flag = false, break
+	- if: "Triple pangram!!!"
+
+	
