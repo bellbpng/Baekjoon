@@ -1,0 +1,10 @@
+- cin >> a >> b >> c
+- arr[101] = {0, }
+- for i=0 to 2:
+	- cin >> arrival >> leave
+	- for j=arrival to leave-1: arr[j]+=1 // calculate only time period, not each point
+- price = 0
+- for i=1 to 100:
+	- if arr[i]==1: price += a
+	- else if arr[i]==2: price += b*2
+	- else if arr[i]==3: price += c*3
