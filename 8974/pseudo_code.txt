@@ -1,0 +1,14 @@
+- cin >> a >> b
+- cnt = 1, total = 0
+- while true:
+	- total += cnt
+	- if total >= b: break
+	- cnt += 1
+- vector<int> v(total)
+- idx = 0
+- for i=1 to cnt:
+	- for j=1 to i:
+		- v[idx++] = i
+- sum = 0
+- for idx=a to b:
+	- sum += v[idx-1]
