@@ -1,0 +1,11 @@
+- while true:
+	- cin >> s
+	- if s=="0": break
+	- while true:
+		- s 정수로 출력
+		- if s.length()==1: break
+		- tmp = 1
+		- for i=0 to s.length()-1:
+			- tmp *= (s[i]-'0')
+		- s = to_string(tmp)
+	- "\n" 출력

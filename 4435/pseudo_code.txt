@@ -1,0 +1,14 @@
+- cin >> t
+- gandalf[6] = {1,2,3,3,4,10}
+- shauron[7] = {1,2,2,2,3,5,10}
+- for i=0 to t-1:
+	- gandalf_total = 0, shauron_total = 0
+	- for idx=0 to 5:
+		- cin >> tmp
+		- gandalf_total += tmp*gandalf[idx]
+	- for idx=0 to 6:
+		- cin >> tmp
+		- shauron_total += tmp*shauron[idx]
+	- gandalf_total > shauron_total -> "Good triumphs over Evil"
+	- gandalf_total < shauron_total -> "Evil eradicates all trace of Good"
+	- else: "No victor on this battle field"
