@@ -1,0 +1,10 @@
+- cin >> n
+- for i=0 to n-1:
+	- cin >> bin
+	- len = bin.length()
+	- sum = 0
+	- for idx=0 to len-1:
+		- if bin[idx]=='1':
+			- num = len - idx - 1
+			- sum += pow(2, num)
+	- sum 출력
