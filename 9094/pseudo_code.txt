@@ -1,0 +1,10 @@
+- cin >> t
+- for i=0 to t-1:
+	- cin >> n >> m
+	- cnt = 0
+	- for a=1 to n-2:
+		- for b=a+1 to n-1:
+			- top = a*a + b*b + m
+			- bottom = a*b
+			- if top%bottom==0: cnt+=1
+	- cnt 출력
