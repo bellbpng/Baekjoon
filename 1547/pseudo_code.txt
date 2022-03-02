@@ -1,0 +1,12 @@
+- cin >> m
+- vector<int> v(3)
+- v[0]=1, v[1]=2, v[2]=3
+- for i=0 to m-1:
+	- cin >> x >> y
+	- for j=0 to 2:
+		- if v[j]==x: x_idx = j
+		- else if v[j]==y: y_idx = j
+	- tmp = v[x_idx]
+	- v[x_idx] = v[y_idx]
+	- v[y_idx] = tmp
+- v[0] 출력
