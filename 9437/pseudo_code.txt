@@ -1,0 +1,22 @@
+- while true:
+	- cin >> n
+	- if n==0: break
+	- cin >> p
+	- len = n/4
+	- vector<vector<int>> v(len, vector<int>(4)) // create two-dimesional vector
+	- a = 1
+	- for row=0 to len-1:
+		- v[row][0] = a, v[row][1] = a+1
+		- v[row][3] = n - a + 1, v[row][2] = v[row][3] - 1
+		- a += 2
+	- chk = false
+	- for row=0 to len-1:
+		- for col=0 to 3:
+			- if v[row][col]==p: idx_r = row, chk = true, break
+		- if chk is true: break
+	- for col = 0 to 3:
+		- if v[idx_r][col] == p: continue
+		- v[idx_r][col] 출력
+
+				
+ 
