@@ -1,0 +1,9 @@
+- cin >> a >> b >> c
+- cin >> str
+- num[3] = {a, b, c}
+- for i=0 to 1:
+	- for j=i+1 to 2
+		- if num[i] > num[j]: tmp = num[i], num[i] = num[j], num[j] = tmp 
+- for i=0 to 2:
+	- ch = str[i]
+	- num[ch-'A'] 출력

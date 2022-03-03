@@ -1,0 +1,8 @@
+- cin >> n >> m
+- vector<int> basket(n+1,0)
+- for a=0 to m-1:
+	- cin >> i >> j >> k
+	- for idx=i to j:
+		- basket[idx] = k
+- for k=1 to n:
+	- basket[k] 출력

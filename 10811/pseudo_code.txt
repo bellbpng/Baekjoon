@@ -1,0 +1,14 @@
+- cin >> n >> m
+- vector<int> basket(n+1,0)
+- for iter = 1 to n:
+	- basket[iter] = iter
+- for iter = 0 to m-1:
+	- cin >> i >> j
+	- stack<int> s
+	- for idx = i to j:
+		- s.push(basket[idx])
+	- for idx = i to j:
+		- basket[idx] = s.top()
+		- s.pop()
+- for iter=1 to n:
+	- basket[iter] 출력
