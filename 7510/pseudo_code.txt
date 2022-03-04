@@ -1,0 +1,11 @@
+- cin >> t
+- for i=0 to t-1:
+	- cin >> a >> b >> c
+	- length[3] = {a, b, c}
+	- others[2] = {b, c}, max_idx = 0
+	- if length[max_idx] < length[1]: max_idx = 1, others[0] = a, others[1] = c
+	- if length[max_idx] < length[2]: max_idx = 2, others[0] = a, others[1] = b
+	- limit = length[max_idx] * length[max_idx]
+	- val = others[0]*others[0] + others[1]*others[1]
+	- if val == limit: "yes"
+	- else: "no"
