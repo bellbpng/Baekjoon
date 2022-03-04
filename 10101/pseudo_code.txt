@@ -1,0 +1,11 @@
+- cin >> a >> b >> c
+- sum = a + b + c
+- if sum != 180: "Error", return 0 
+- cnt = 0
+- if a==b: cnt += 1
+- if a==c: cnt += 1
+- if b==c: cnt += 1
+- switch (cnt)
+	- case 0: "Scalene", break
+	- case 1: "Isosceles", break
+	- default: "Equilateral"
