@@ -1,0 +1,10 @@
+- cin >> n
+- for i=0 to n-1:
+	- for j=n-i-1 down to 1: - " "
+	- if i==0: "*"
+	- else:
+		- "*"
+		- for j=1 to 2*i-1:
+			- " "
+		- "*"
+	- "\n" 
