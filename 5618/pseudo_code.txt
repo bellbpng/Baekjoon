@@ -1,0 +1,19 @@
+# define function
+- int maxCom(const int& a, const int& b)
+	- if a>b: first = a, second = b
+	- else: first = b, second = a
+	- r = first % second
+	- while r!=0:
+		- first = second, second = r
+		- r = first%second
+	- return second
+
+# main
+- cin >> n
+- vector<int> v(n)
+- for i=0 to n-1:
+	- cin >> v[i]
+- if n==2: max = maxCom(v[0], v[1])
+- else: tmp = maxCom(v[0], v[1]), max = maxCom(tmp, v[2])
+- for i=1 to max:
+	- if max%i==0: i 출력
