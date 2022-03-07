@@ -1,0 +1,22 @@
+#define function
+char changeOct(const string& str)
+	- if str=="000": return '0'
+	- else if str=="001": return '1'
+	- else if str=="010": return '2'
+	- else if str=="011": return '3'
+	- else if str=="100": return '4'
+	- else if str=="101": return '5'
+	- else if str=="110": return '6'
+	- else: return 7
+
+#main
+- cin >> original
+- r = original.length()%3
+- if r==1: str.push_back('0'), str.push_back('0')
+- else if r==2: str.push_back('0)
+- str += original
+- len = str.length()
+- for idx=0 to len-1 step +=3:
+	- for k=0 to 2:
+		- tmp.push_back(str[idx+k])
+	- std::cout << changeOct(tmp)
