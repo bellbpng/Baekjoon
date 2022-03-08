@@ -1,0 +1,12 @@
+- cin >> n >> b
+- while n/b != 0:
+	- r = n%b
+	- n = n/b
+	- if r>9: ch = r+55
+	- else: ch = r + '0'
+	- str.push_back(ch)
+- if n>9: ch = n+55
+- else: ch = n + '0'
+- str.push_back(ch)
+- reverse(str.begin(), str.end())
+- str 출력
