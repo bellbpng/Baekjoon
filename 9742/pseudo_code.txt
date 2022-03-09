@@ -1,0 +1,16 @@
+#define function
+- int factorial(const int& a)
+	- val = 1
+	- for i=2 to a: val = val * i
+	- return val
+
+#main
+- while true:
+	- if cin.eof() is true: break // 파일의 끝에 도달하면 탈출
+	- cin >> str >> n
+	- len = str.length()
+	- limit = factorial(len)
+	- if n > limit : "No permutation" 출력, continue
+	- for i=0 to n-1:
+		- next_permutation(str.begin(). str.end())
+	- 출력 형식에 맞춰서 결과 출력
