@@ -1,0 +1,15 @@
+- vector<bool> prime(1000001, true)
+- for i=3 to 500000, step += 2:
+	- for j=i+i to 1000000, step += i:
+		- if prime[j]==true: prime[j] = false
+- while true:
+	- n 입력
+	- if n==0: break
+	- chk = true // 골드바흐 추측으로 안되는 경우
+	- for i=3 to n/2, step += 2:
+		- if prime[i] is true && prime[n-i] is true:
+			- chk = false
+			- if tmp > diff: diff = tmp, b = n-i, a = i
+	- if chk is true: "Goldbach's conjecture is wrong."
+	- else: 출력형식에 맞춰 출력
+			

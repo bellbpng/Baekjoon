@@ -1,0 +1,23 @@
+# define function
+bool findPrime(const int& n)
+	- for j=2 to sqrt(n):
+		- if n%j==0: return false
+	- return true
+
+# main
+- while true:
+	- n 입력
+	- if n==0: break
+	- vector<int> prime
+	- prime.push_back(3), prime.push_back(5)
+	- diff = 0 // b-a 를 담는 변수
+	- for i = 7 to n/2, step += 2:
+		- if findPrime(i) is true: prime.push_back(i)
+	- chk = true // 골드바흐의 추측으로 결과가 나오지 않는 경우
+	- for i=0 to prime.size()-1:
+		- val = n - prime[i]
+		- if findPrime(val) is true:
+			- chk = false // 골드바흐의 추측으로 결과가 나오는 경우
+			- tmp = val - prime[i]
+			- if tmp > diff: diff = tmp, b = val, a = prime[i]
+
