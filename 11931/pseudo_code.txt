@@ -1,0 +1,12 @@
+# define function
+bool cmp(const int& a, const int& b)
+	- return a > b
+
+# main
+- cin >> n
+- vector<int> v(n)
+- for i=0 to n-1:
+	- cin >> v[i]
+- sort(v.begin(), v.end(), cmp)
+- for iter : v
+	- iter 출력
