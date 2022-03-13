@@ -1,0 +1,28 @@
+# define function
+- bool findBingo(const int arr[][3])
+	- for row=0 to 2:
+		- cnt = 0
+		- for col=0 to 2:
+			- if arr[row][col]==1: cnt+=1
+		- if cnt==3: return true
+	- for col=0 to 2:
+		- cnt = 0
+		- for row=0 to 2:
+			- if arr[row][col]==1: cnt+=1
+		- if cnt==3: return true
+	- if (arr[0][0]==1 && arr[1][1]==1) && arr[2][2]==1 is true: return true
+	- else if (arr[2][0]==1 && arr[1][1]==1) && arr[0][2]==1 is true: return true
+	- return false
+
+# main
+- 2차원 배열 2개 생성, arr_one[3][3]={0, }, arr_two[3][3]={0, }
+- 먼저 시작할 플레이어 번호 입력(1 or 2), num
+- cnt = 0
+- while true:
+	- if num==1: 좌표 입력(a,b), arr_one[a-1][b-1]=1, num=2
+	- else if num==2: 좌표 입력(a,b), arr_two[a-1][b-1]=1, num=1
+	- if findBingo(arr_one) is true: 1 출력, break
+	- else if findBingo(arr_two) is true: 2 출력, break
+	- cnt+=1
+	- if cnt==9: 0 출력, break 
+ 
