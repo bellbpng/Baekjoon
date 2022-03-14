@@ -1,0 +1,13 @@
+- n, k 입력
+- getline(cin, str)
+- stringstream ss(str)
+- string token // 비어있는 문자열 객체 선언
+- vector<int> a(n)
+- i = 0
+- while getline(ss, token, ',')
+	- a[i++] = stoi(token)
+- for i=0 to k-1:
+	- for j=0 to n-i-2:
+		- a[j] = a[j+1] - a[j]
+- for i=0 to n-k:
+	- a[i] 출력
