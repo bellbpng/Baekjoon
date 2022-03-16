@@ -1,0 +1,14 @@
+#### 50% 에서 틀렸습니다 나옴..####
+- 테스트케이스 입력, t
+- for i=0 to t-1:
+	- 암호화 된 편지 입력, str
+	- len = str.length()
+	- border = sqrt(len)
+	- 2차원 배열 만들기, letter[border][border]
+	- k = 0 // str 변수의 인덱스
+	- for row=0 to border-1:
+		- for col=0 to border-1:
+			- letter[row][col] = str[k++]
+	- for col=border-1 downto 0:
+		- for row=0 to border-1:
+			- letter[row][col] 출력
