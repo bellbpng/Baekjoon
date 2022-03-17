@@ -1,0 +1,12 @@
+- 연산의 개수 입력, n
+- 우선순위 큐 2개 선언, pq1 for positive integers (greater), pq2 for negative integers (less)
+- for i=0 to n-1:
+	- 정수 입력, num
+	- if num>0: pq1.push(num)
+	- else if num<0: pq2.push(num)
+	- if num==0:
+		- if pq1.empty() && pq2.empty(): 0 출력
+		- else if pq1.empty() is true: pq2.top() 출력, pq2.pop()
+		- else if pq2.empty() is true: pq1.top() 출력, pq1.pop()
+		- else if pq1.top() < abs(pq2.top()): pq1.top() 출력, pq1.pop()
+		- else: pq2.top() 출력, pq2.pop()
