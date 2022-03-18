@@ -1,0 +1,10 @@
+- while true:
+	- 양의 정수 네 개 입력, a,b,c,d
+	- if ((!a && !b) && !c) && !d is true: break
+	- cnt = 0
+	- while true:
+		- if (a==b && a==c) && a==d: break
+		- cnt += 1
+		- tmp = a
+		- a = abs(a-b), b = abs(b-c), c = abs(c-d), d = abs(d-tmp)
+	- cnt 출력
