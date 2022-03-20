@@ -1,0 +1,18 @@
+- n, m 입력
+- 우선순위 큐(내림차순)를 담는 벡터 컨테이너 선언, player
+- 각 플레이어의 점수를 담는 벡터 컨테이너 선언, score
+- for i=0 to n-1:
+	- for j=0 to m-1:
+		- 카드 번호 입력, num
+		- player[i].push(num)
+- for j=0 to m-1:
+	- max = player[0].top()
+	- for i=1 to n-1:
+		- tmp = player[i].top()
+		- if tmp > max: max = tmp
+	- for i=0 to n-1:
+		- if player[i].top() == max: score[i] += 1
+		- player[i].pop()
+- max = *max_element(score.begin(), score.end())
+- for i=0 to n-1:
+	- if max == score[i]: i+1 출력
