@@ -1,0 +1,8 @@
+- A 공격력, 생명력 입력, a_attack, a_life
+- B 공격력, 생명력 입력, b_attack, b_life
+- while true:
+	- a_life -= b_attack
+	- b_life -= a_attack
+	- if a_life<=0 && b_life<=0: DRAW, break
+	- else if a_life<=0: PLAYER B, break
+	- else if b_life<=0: PLAYER A, break
