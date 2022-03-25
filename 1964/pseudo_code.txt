@@ -1,0 +1,7 @@
+- n 입력
+- 벡터 컨테이너 선언, vector<unsigned long long> v(n,0)
+- v[0] = 5
+- for i=1 to n-1:
+	- v[i] = v[i-1] + 4 + i*3
+- result = v[n-1] % 45678
+- result 출력
