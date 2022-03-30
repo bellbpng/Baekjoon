@@ -1,0 +1,8 @@
+- r,c,zr,zc, 입력
+- for i=0 to r-1:
+	- 한 줄씩 처리하기 위해 문자열로 입력, str
+	- for j=0 to zr-1:
+		- for l=0 to c-1:
+			- for k=0 to zc-1:
+				- str[l] 출력
+		- 개행 출력
