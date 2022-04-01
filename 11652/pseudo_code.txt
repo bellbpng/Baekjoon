@@ -17,3 +17,25 @@
 - if cnt > max: result = v[n-1]
 - else: result = val[0]
 - result 출력
+
+
+####정답!####
+# define function
+- bool cmp(const pair<int, int>& p1, const pair<int, int>& p2)
+	- return p1.second > p2.second
+
+#main
+- 숫자 카드의 개수 입력, n
+- unordered_map 선언, card
+- for i=0 to n-1:
+	- 카드 번호 입력, num
+	- if card.find(num) != card.end(): card[num] += 1 # if key is num, count
+	- else: card[num] = 1
+- vector container 선언, v # 정렬하기 위해서
+- sort(v.begin(), v.end(), cmp)
+- max_cnt = (*(v.begin())).second
+- vector container 선언, result # max_cnt를 가지는 카드들 저장
+- for iter : v
+	- if iter.second == max_cnt: result.push_back(iter.first)
+- min = *min_element(result.begin(), result.end())
+- min 출력
