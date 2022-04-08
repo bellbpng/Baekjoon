@@ -1,0 +1,26 @@
+- x 입력
+- 가지고 있는 막대의 길이를 담을 변수 선언: 벡터, v
+- v.push_back(64)
+- len = 64
+- while true:
+	- if len == x: break
+	- else if len > x:
+		- idx = v.size()-1
+		- min = v[idx]
+		- piece = min/2
+		- v[idx] = piece
+		- sum = 0
+		- for auto iter : v
+			- sum += iter
+		- if sum < x: 
+			- v.push_back(piece)
+			- len = sum + piece
+		- else: len = sum
+- v.size() 출력
+
+## 비트마스킹을 이용한 풀이법 ##
+- x 입력
+- cnt = 0
+- while x>0:
+	- if x%2==1: cnt += 1
+	- x = x/2
