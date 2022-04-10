@@ -1,0 +1,12 @@
+- 그림을 담는 배열 선언, paint[101][101] = {0, }
+- n, m 입력
+- no_vision_cnt = 0
+- for i=0 to n-1:
+	- 왼쪽 아래 모서리(x1,y1), 오른쪽 위 모서리(x2, y2) 입력
+	- for col=x1 to x2:
+		- for row=y1 to y2:
+			- paint[row][col] += 1
+- for row=1 to 100:
+	- for col=1 to 100:
+		- if paint[row][col]>m: no_vistion_cnt+=1
+- no_vision_cnt 출력
