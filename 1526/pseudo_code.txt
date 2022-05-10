@@ -1,0 +1,13 @@
+- N 입력
+- for i=N to 4, step -1 :
+	- tmp = to_string(i)
+	- len = tmp.length()
+	- chk = true
+	- for j=0 to len-1:
+		- if tmp[j] == '4' || tmp[j] == '7': continue
+		- else:
+			- chk = false
+			- break	
+	- if chk is true:
+		- tmp 출력
+		- break
