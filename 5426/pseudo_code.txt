@@ -12,3 +12,14 @@
 	- for col=border-1 downto 0:
 		- for row=0 to border-1:
 			- letter[row][col] 출력
+
+
+#### Other solution ####
+- 테스트케이스 입력, t
+- for i=0 to t-1:
+	- 암호화 된 편지 입력, str
+	- len = str.length()
+	- lim = sqrt(len)
+	- for k=0 to lim-1:
+		- for l=lim-1 to len-1, step: lim:
+			- str[l-k] 출력
