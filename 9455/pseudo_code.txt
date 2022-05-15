@@ -1,0 +1,16 @@
+- 테스트케이스 입력, t
+- for i=0 to t-1:
+	- 행과 열 입력, m, n
+	- 2차원 벡터 컨테이너 선언, v[m][n]
+	- for row=0 to m-1:
+		- for col=0 to n-1:
+			- 원소 입력, n
+	- mov = 0
+	- for col=0 to n-1:
+		- row_target = m-1
+		- for row=m-1 downto 0:
+			- val = v[row][col]
+			- if val==1:
+				- mov += (row_target - row)
+				- row_target -= 1
+	- mov 출력
