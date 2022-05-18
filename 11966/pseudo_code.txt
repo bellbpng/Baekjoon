@@ -1,0 +1,9 @@
+- 자연수 N 입력
+- if n==1: 1 출력
+- else if n%2==1: 0 출력
+- tmp = 2, chk = true
+- while tmp!=n:
+	- tmp = tmp<<1
+	- if tmp>n: chk=false, break
+- if chk is true: 1 출력
+- else: 0 출력
