@@ -1,0 +1,16 @@
+# define function
+- bool compareOrder(const vector<string>& origin, const vector<string>& tmp)
+	- for i=0 to origin.size()-1:
+		- if origin[i] != tmp[i]: return false
+	- return true
+
+- 이름 개수 입력, n
+- string 객체를 담는 벡터 컨테이너 선언, vector<string> origin(n)
+- for i=0 to n-1:
+	- 문자열 입력, origin[i]
+- origin 컨테이너 복사, vector<string> tmp(n), copy(origin.begin(), origin.end(), tmp.begin())
+- sort(tmp.begin(), tmp.end(), less<>()) // 오름차순 정렬
+- if compareOrder(origin, tmp) is true: "INCREASING", return 0
+- sort(tmp.begin(), tmp.end(), greater<>()) // 내림차순 정렬
+- if compareOrder(origin, tmp) is true: "DECREASING", return 0
+- "NEITHER" 출력
