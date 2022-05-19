@@ -1,0 +1,11 @@
+- 테스트 케이스 입력, n
+- for i=0 to n-1:
+	- 문자열 입력, str
+	- len = str.length()
+	- for j=0 to len-1:
+		- if isupper(str[j]): 
+			- str[j]=tolower(str[j])
+	- origin = str
+	- str.reverse(str.begin(), str.end())
+	- if origin==str: "Yes" 출력
+	- else: "No" 출력
