@@ -1,0 +1,10 @@
+- while true:
+	- 양의 정수 3개 입력, v[3]
+	- if (v[0]==0 && v[1]==0) && v[2]==0: break
+	- sort(v.begin(), v.end(), greater<>())
+	- if v[0] >= v[1]+v[2]: "Invalid" 출력
+	- else if v[0]==v[1] 
+		- if v[1]==v[2]: "Equilateral" 출력
+		- else: "Isosceles" 출력
+	- else if v[1]==v[2] || v[0]==v[2]: "Isosceles" 출력
+	- else: "Scalene" 출력
