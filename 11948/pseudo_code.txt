@@ -1,0 +1,6 @@
+- 물리, 화학, 생물, 지구과학 점수 입력, vector<int> v(4)
+- 역사(e), 지리(f) 점수 입력
+- sort(v.begin(), v.end(), greater<>())
+- score = v[0] + v[1] + v[2]
+- score = score + (e>f ? e : f)
+- score 출력
