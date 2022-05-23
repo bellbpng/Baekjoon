@@ -1,0 +1,14 @@
+- 공백을 포함하는 문자열, str
+- stringstream을 활용해 공백을 기준으로 단어 파싱, vector<string> words
+- 쓸모없는 단어 저장, vector<string> meanless = {"i", "pa", "te", "ni", "niti", "a", "ali", "nego", "no", "ili"}
+- for ele : meanless
+	- if words[0]==ele:
+		- ch = words[0][0]
+		- toupper(ch) 출력
+- for i=1 to words.size()-1:
+	- chk = true
+	- for ele : meanless
+		- if ele==words[i]: chk=false, break
+	- if chk is true:
+		- ch = words[i][0]
+		- toupper(ch) 출력
