@@ -1,0 +1,8 @@
+- 테스트케이스 입력, t
+- for i=0 to t-1:
+	- 병렬버전 개발시간(d), 프로그램 실행 횟수(n), 직렬버전 실행시간(s), 병렬버전 실행시간(p)
+	- paral_time = d + n * p
+	- serial_time = n * s
+	- if paral_time > serial_time: "do not parallelize"
+	- else if paral_time == serial_time: "does not matter"
+	- else: "parallelize"
