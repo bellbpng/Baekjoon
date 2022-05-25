@@ -1,0 +1,27 @@
+# define function
+- void swapNumber(vector<int>& v, const int& idx)
+	- tmp = v[idx]
+	- v[idx] = v[idx+1]
+	- v[idx+1] = tmp
+
+- void printOrder(const vector<int>& v)
+	- for ele in v
+		- cout << ele << " "
+	- cout << "\n"
+
+- bool checkAscend(const vector<int> &v)
+	- for i=0 to v.size()-2:
+		- if v[i] > v[i+1]: return false
+	- return true
+
+# main
+- 조각에 쓰여 있는 수 입력, vector<int> v(5)
+- while true:
+	- if v[0] > v[1]: swapNumber(v, 0), printOrder(v)
+		- if checkAscend(v) is true: break
+	- if v[1] > v[2]: swapNumber(v, 1), printOrder(v)
+		- if checkAscend(v) is true: break
+	- if v[2] > v[3]: swapNumber(v, 2), printOrder(v)
+		- if checkAscend(v) is true: break
+	- if v[3] > v[4]: swapNumber(v, 3), printOrder(v)
+		- if checkAscend(v) is true: break
