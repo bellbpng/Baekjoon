@@ -1,0 +1,12 @@
+- while true:
+	- 정수 n 입력
+	- if n==0: break
+	- 추측한 수 입력, vector<int> v
+	- current = 0
+	- for i=0 to n-1:
+		- 숫자 입력, next
+		- if current != next:
+			- current = next
+			- v.push_back(current)
+	- for ele : v
+		- ele 출력
