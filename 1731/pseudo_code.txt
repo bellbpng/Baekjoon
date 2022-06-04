@@ -1,0 +1,10 @@
+- 수열의 길이 입력, n
+- 수열 담을 컨테이너 선언, vector<int> v(n)
+- for i=0 to n-1:
+	- 수열 원소 입력, v[i]
+- diff = v[1] - v[0]
+- ratio = v[1] / v[0]
+- if diff == v[2] - v[1]:
+	- v[n-1] + diff 출력
+- else:
+	- v[n-1] * ratio 출력
