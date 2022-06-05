@@ -1,0 +1,14 @@
+- while true:
+	- 문자열 입력, str
+	- if str=="#": break
+	- alpha[26] = {flase, }
+	- for ch : str
+		- if isalpha(ch):
+			- if isupper(ch):
+				- ch = tolower(ch)
+			- idx = ch - 'a'
+			- alpha[idx] = true
+	- cnt = 0
+	- for i=0 to 25:
+		- if alpha[i] is true: cnt += 1
+	- cnt 출력
