@@ -1,0 +1,11 @@
+- while true:
+	- a, b 입력
+	- if a==0 && b==0: break
+	- vector<int> tmp(3)
+	- tmp[0] = 2*a - b # a가 중앙값
+	- tmp[1] = -a + 2*b # b가 중앙값
+	- tmp[2] = (a+b)/2 # c가 중앙값
+	- min = tmp[0]
+	- for i=1 to 2:
+		- if min > tmp[i]: min = tmp[i]
+	- min 출력
