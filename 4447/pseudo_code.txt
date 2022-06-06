@@ -1,0 +1,18 @@
+- 테스트케이스 입력, n
+- for i=0 to n-1:
+	- 이름 입력, name
+	- len = name.length()
+	- str = name
+	- diff = 'a' - 'A'
+	- cnt_g = 0, cng_b = 0
+	- for j=0 to len-1:
+		- if isupper(str[j])
+			- str[j] = str[j] + diff
+		- if str[j]=='g': cnt_g += 1
+		- else if str[j]=='b': cnt_b += 1
+	- if cnt_g > cnt_b:
+		- name + "is GOOD"
+	- else if cnt_g < cnt_b:
+		- name + "is A BADDY"
+	- else: 
+		- name + "is NEUTRAL"
