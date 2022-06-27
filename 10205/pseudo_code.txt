@@ -1,0 +1,12 @@
+- data set 개수 입력, k
+- for i=0 to k-1:
+	- 히드라의 머리 개수 입력, h
+	- 일련의 행동 입력, actions
+	- len = actions.length()
+	- for j=0 to len-1:
+		- ch = actions[j]
+		- switch(ch)
+			- case 'c': h+=1
+			- case 'b': h-=1
+	- printf("Data Set %d: \n", i+1)
+	- printf("%d\n\n", h)
