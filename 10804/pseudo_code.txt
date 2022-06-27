@@ -1,0 +1,19 @@
+# define function
+- void swapReverse(const int& start, const int& end)
+	- mid = (start + end) / 2
+	- j = 0
+	- for i=start to mid:
+		- tmp = v[i]
+		- v[i] = v[end-j]
+		- v[end-j] = tmp
+		- j += 1
+
+# main
+- 20장의 카드 배열 선언, vector<int> v(20)
+- for i=0 to 19:
+	- v[i] = i+1
+- for i=0 to 9:
+	- 구간 입력, start, end
+	- swapReverse(start-1, end-1)
+- for ele : v
+	- ele 출력
